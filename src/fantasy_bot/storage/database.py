@@ -5,10 +5,27 @@ from __future__ import annotations
 from pathlib import Path
 
 from sqlalchemy import event, inspect, text
-from sqlalchemy.engine import make_url
+from sqlalchemy.engine import URL, make_url
 from sqlalchemy.ext.asyncio import AsyncEngine, async_sessionmaker, create_async_engine
 
 from fantasy_bot.storage.models import Base
+
+# libpq-style URL options that asyncpg doesn't accept as keywords.
+_LIBPQ_ONLY = ("sslmode", "channel_binding")
+
+
+def asyncpg_ssl(parsed: URL) -> tuple[URL, dict]:
+    """Hosted Postgres URLs (Neon, Supabase...) end in ?sslmode=require, which asyncpg
+    rejects. Move it into asyncpg's ``ssl`` connect argument instead."""
+    if parsed.drivername != "postgresql+asyncpg":
+        return parsed, {}
+    mode = parsed.query.get("sslmode")
+    cleaned = parsed.difference_update_query(_LIBPQ_ONLY)
+    if isinstance(mode, tuple):
+        mode = mode[0]
+    if mode and mode != "disable":
+        return cleaned, {"ssl": "require" if mode in ("require", "prefer", "allow") else mode}
+    return cleaned, {}
 
 
 def create_engine(url: str) -> AsyncEngine:
@@ -17,7 +34,8 @@ def create_engine(url: str) -> AsyncEngine:
     if is_sqlite and parsed.database and parsed.database != ":memory:":
         Path(parsed.database).parent.mkdir(parents=True, exist_ok=True)
 
-    engine = create_async_engine(url, pool_pre_ping=not is_sqlite)
+    parsed, connect_args = asyncpg_ssl(parsed)
+    engine = create_async_engine(parsed, pool_pre_ping=not is_sqlite, connect_args=connect_args)
     if is_sqlite:
 
         @event.listens_for(engine.sync_engine, "connect")

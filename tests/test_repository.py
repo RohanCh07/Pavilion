@@ -66,3 +66,18 @@ async def test_init_db_adds_pool_column_to_an_old_database(tmp_path):
         cols = [r[1] for r in await conn.execute(text("PRAGMA table_info(fantasy_teams)"))]
     assert "pool_id" in cols
     await engine.dispose()
+
+
+def test_neon_style_urls_move_sslmode_to_asyncpg():
+    from sqlalchemy.engine import make_url
+
+    from fantasy_bot.storage.database import asyncpg_ssl
+
+    url, args = asyncpg_ssl(
+        make_url(
+            "postgresql+asyncpg://u:p@ep-x.neon.tech/db?sslmode=require&channel_binding=require"
+        )
+    )
+    assert "sslmode" not in str(url) and "channel_binding" not in str(url)
+    assert args == {"ssl": "require"}
+    assert asyncpg_ssl(make_url("sqlite+aiosqlite:///x.db"))[1] == {}

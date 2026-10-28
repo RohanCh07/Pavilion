@@ -1,12 +1,8 @@
-# Render Blueprint: New > Blueprint > pick this repo. Creates the web app, the Telegram bot
-# and a Postgres database. Fill in the variables marked sync: false when Render asks.
-# See docs/DEPLOY.md.
-
-databases:
-  - name: pavilion-db
-    plan: free
-    databaseName: pavilion
-    user: pavilion
+# Render Blueprint: New > Blueprint > pick this repo. Creates the web app on Render's free
+# plan. The database is a free Neon Postgres (neon.tech): paste its connection string as
+# DATABASE_URL when Render asks (a plain postgres:// or postgresql:// URL is fine).
+# The Telegram bot isn't included: a free web service sleeps, so it can't watch live
+# matches. Run the bot on an always-on machine instead (see docs/DEPLOY.md).
 
 services:
   - type: web
@@ -19,27 +15,8 @@ services:
       - key: DATA_PROVIDER
         value: crex
       - key: DATABASE_URL
-        fromDatabase:
-          name: pavilion-db
-          property: connectionString
+        sync: false
       - key: CREX_SERIES
         sync: false
       - key: LOG_LEVEL
         value: INFO
-
-  # The Telegram bot. Background workers are a paid Render plan; delete this block to skip it.
-  - type: worker
-    name: pavilion-bot
-    runtime: docker
-    plan: starter
-    dockerCommand: fantasy-bot
-    autoDeploy: true
-    envVars:
-      - key: DATA_PROVIDER
-        value: crex
-      - key: TELEGRAM_BOT_TOKEN
-        sync: false
-      - key: DATABASE_URL
-        fromDatabase:
-          name: pavilion-db
-          property: connectionString

@@ -44,18 +44,21 @@ the `pgdata` volume. Put a reverse proxy (Caddy, Nginx) in front for HTTPS. To u
 
 Not using the bot? `docker compose up -d api db`.
 
-## Option B: Render (blueprint)
+## Option B: Render + Neon (free)
 
-`render.yaml` sets everything up: the web app (free plan), the Telegram bot (a paid
-background worker; delete its block to skip it) and a Postgres database.
+`render.yaml` sets up the web app on Render's free plan, with a free Postgres database from
+[Neon](https://neon.tech) (Render's own free database has a time limit; Neon's doesn't).
 
-1. In Render: **New > Blueprint**, pick the repo, and apply.
-2. When asked, fill in `TELEGRAM_BOT_TOKEN` (and `CREX_SERIES` if you want to limit series).
-3. Open the web service's URL. Every push to `main` redeploys.
+1. In Neon: create a project and copy its connection string
+   (`postgresql://user:pass@host/db?sslmode=require`).
+2. In Render: **New > Blueprint**, pick the repo.
+3. When asked, paste the Neon string as `DATABASE_URL` (leave `CREX_SERIES` empty unless you
+   want to limit series), then apply.
+4. Open the web service's URL. Every push to `main` redeploys.
 
-Free web services sleep after a while without visits, so the first visit after that takes
-up to a minute. Render's free Postgres has a time limit, so move it to a paid plan to keep
-your data long term. Check Render's current pricing page for the details.
+The free web service sleeps when idle, so the first visit after that takes up to a minute.
+The Telegram bot isn't part of this setup: it needs an always-on machine (Option A, e.g. on
+a free Oracle Cloud VM, or a paid Render background worker running `fantasy-bot`).
 
 ## Option B2: other platforms that build from your repo (Railway, Fly.io, ...)
 
