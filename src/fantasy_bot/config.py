@@ -32,6 +32,15 @@ def _int(name: str, default: int) -> int:
         raise ConfigError(f"{name} must be an integer, got {raw!r}") from exc
 
 
+def async_database_url(url: str) -> str:
+    """Hosts hand out plain Postgres URLs (postgres://...); the app needs the asyncpg driver."""
+    url = url.strip()
+    for prefix in ("postgres://", "postgresql://"):
+        if url.startswith(prefix):
+            return "postgresql+asyncpg://" + url[len(prefix) :]
+    return url
+
+
 def current_season(today: date | None = None) -> int:
     """European seasons run Aug-May and are named by their starting year."""
     today = today or date.today()
@@ -94,7 +103,9 @@ class Settings:
             schedule_refresh_seconds=max(600, _int("SCHEDULE_REFRESH_SECONDS", 3 * 3600)),
             scoring_ruleset=os.getenv("SCORING_RULESET", "").strip() or DEFAULT_RULESETS[sport],
             squad_size=_int("SQUAD_SIZE", 11),
-            database_url=os.getenv("DATABASE_URL", "sqlite+aiosqlite:///data/fantasy.db"),
+            database_url=async_database_url(
+                os.getenv("DATABASE_URL", "sqlite+aiosqlite:///data/fantasy.db")
+            ),
             log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
             # Hosting platforms (Render, Railway, Fly...) set PORT and expect 0.0.0.0.
             api_host=os.getenv("API_HOST", "0.0.0.0" if os.getenv("PORT") else "127.0.0.1").strip(),

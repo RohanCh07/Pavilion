@@ -231,3 +231,18 @@ def test_duck_and_milestones_differ_by_format(crules):
     big = CricketStats(batted=True, runs=150, balls_faced=200)
     assert calculate_points(big, BAT, crules, fmt="odi").by_key()["milestone"].points == 24
     assert points(big, BAT, crules).by_key()["milestone"].points == 16  # T20 tops out at 100
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("postgres://u:p@h:5432/db", "postgresql+asyncpg://u:p@h:5432/db"),
+        ("postgresql://u:p@h/db", "postgresql+asyncpg://u:p@h/db"),
+        ("postgresql+asyncpg://u:p@h/db", "postgresql+asyncpg://u:p@h/db"),
+        ("sqlite+aiosqlite:///data/fantasy.db", "sqlite+aiosqlite:///data/fantasy.db"),
+    ],
+)
+def test_hosted_postgres_urls_get_the_async_driver(raw, expected):
+    from fantasy_bot.config import async_database_url
+
+    assert async_database_url(raw) == expected

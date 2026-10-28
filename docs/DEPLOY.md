@@ -44,14 +44,27 @@ the `pgdata` volume. Put a reverse proxy (Caddy, Nginx) in front for HTTPS. To u
 
 Not using the bot? `docker compose up -d api db`.
 
-## Option B: a platform that builds from your repo (Render, Railway, Fly.io, ...)
+## Option B: Render (blueprint)
+
+`render.yaml` sets everything up: the web app (free plan), the Telegram bot (a paid
+background worker; delete its block to skip it) and a Postgres database.
+
+1. In Render: **New > Blueprint**, pick the repo, and apply.
+2. When asked, fill in `TELEGRAM_BOT_TOKEN` (and `CREX_SERIES` if you want to limit series).
+3. Open the web service's URL. Every push to `main` redeploys.
+
+Free web services sleep after a while without visits, so the first visit after that takes
+up to a minute. Render's free Postgres has a time limit, so move it to a paid plan to keep
+your data long term. Check Render's current pricing page for the details.
+
+## Option B2: other platforms that build from your repo (Railway, Fly.io, ...)
 
 1. Connect the repository and choose **Docker** as the build method (the `Dockerfile` is at
    the root).
 2. Web service: no start command needed (the image runs `fantasy-api`). Health check path:
    `/health`.
-3. Database: add the platform's Postgres and set `DATABASE_URL` to its connection string,
-   with the scheme changed to `postgresql+asyncpg://`. Or attach a persistent disk at `/data`
+3. Database: add the platform's Postgres and set `DATABASE_URL` to its connection string
+   (a plain `postgres://` URL is fine; the app switches it to the async driver). Or attach a persistent disk at `/data`
    to keep the default SQLite.
 4. Set `DATA_PROVIDER=crex` (and any other variables above).
 5. Bot (optional): add a **background worker** from the same repo with start command
