@@ -1,0 +1,682 @@
+{
+ "https://stats.crickapi.com/series/getSeriesOverview": {
+  "i1": {
+   "i": {
+    "d": "1792627200000-1796083200000",
+    "f": "2-3.5-1.5-2/1",
+    "odi_fo": "ODIs",
+    "t20_fo": "T20Is",
+    "test_fo": "Tests",
+    "odi_subformat": "ODI",
+    "t20_subformat": "T20I",
+    "test_subformat": "Test",
+    "host": "R",
+    "r": null,
+    "istt": 0,
+    "s": "1",
+    "t": 0,
+    "sh": 0,
+    "sn": "",
+    "brt": 0,
+    "it": 1,
+    "tr": 0
+   },
+   "s": [
+    {
+     "gi": 22846,
+     "tf": "O",
+     "ft": 1,
+     "st": 1,
+     "pf": [
+      "2X/1/0/1",
+      "4I/1/0/1",
+      "B1/1/0/1",
+      "AK/1/0/1",
+      "O5/1/0/1",
+      "177/1/0/1",
+      "AXL/1/0/1",
+      "ES/1/0/1",
+      "CM/1/0/2",
+      "15Q/3/0/3",
+      "8C5/3/0/3",
+      "A9/3/0/3",
+      "7OV/3/0/3",
+      "60B/3/0/3",
+      "75/2/0/4",
+      "E5/2/0/5",
+      "EF/2/0/5",
+      "E1/2/0/5",
+      "5UZ/2/0/5",
+      "7O3/2/0/5"
+     ],
+     "c": [
+      "O5/1"
+     ],
+     "vc": [
+      "B1/1"
+     ],
+     "f": [],
+     "iw": [
+      "AK/1",
+      "177/1",
+      "CM/1"
+     ],
+     "ij": [],
+     "ro": [],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "2A"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "Q2Q"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "4N"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "Q4M"
+      }
+     ]
+    },
+    {
+     "gi": 22847,
+     "tf": "O",
+     "ft": 3,
+     "st": 1,
+     "pf": [
+      "O5/1/0/1",
+      "AK/1/0/1",
+      "16J/1/0/1",
+      "15K/1/0/2",
+      "EI/1/0/2",
+      "CL/1/0/2",
+      "6M2/1/0/2",
+      "7/3/0/3",
+      "8C5/3/0/3",
+      "7OV/3/0/3",
+      "LQ/3/0/3",
+      "75/2/0/4",
+      "AJ/2/0/5",
+      "EF/2/0/5",
+      "5KW/2/0/5",
+      "E1/2/0/5"
+     ],
+     "c": [
+      "O5/1"
+     ],
+     "vc": [
+      "AK/1"
+     ],
+     "f": [],
+     "iw": [
+      "AK/1",
+      "16J/1",
+      "CL/1"
+     ],
+     "ij": [],
+     "ro": [],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "2A"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "Q2Q"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "4N"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "Q4M"
+      }
+     ]
+    },
+    {
+     "gi": 22848,
+     "tf": "O",
+     "ft": 2,
+     "st": 1,
+     "pf": [
+      "AXL/1/1/1",
+      "72/1/1/1",
+      "177/1/0/1",
+      "B1/1/1/1",
+      "DBT/1/1/2",
+      "CM/1/0/2",
+      "15Q/3/1/3",
+      "A9/3/1/3",
+      "EJ/3/0/3",
+      "7OV/3/1/3",
+      "1DH/3/1/3",
+      "EK/2/0/4",
+      "75/2/0/4",
+      "DCZ/2/1/5",
+      "7RU/2/0/5",
+      "E5/2/1/5",
+      "36/2/1/5"
+     ],
+     "c": [
+      "B1/1"
+     ],
+     "vc": [
+      "15Q/3"
+     ],
+     "f": [],
+     "iw": [
+      "72/1",
+      "CM/1"
+     ],
+     "ij": [],
+     "ro": [
+      "CM"
+     ],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "2A"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "Q2Q"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "4N"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "Q4M"
+      }
+     ]
+    },
+    {
+     "gi": 22849,
+     "tf": "R",
+     "ft": 3,
+     "st": 1,
+     "pf": [
+      "null/1/0/null"
+     ],
+     "c": [],
+     "vc": [],
+     "f": [],
+     "iw": [],
+     "ij": [],
+     "ro": [],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "QAM"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "MN"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "7X"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "2AB"
+      }
+     ]
+    },
+    {
+     "gi": 22850,
+     "tf": "R",
+     "ft": 1,
+     "st": 1,
+     "pf": [
+      "JX/1/0/1",
+      "5GN/1/0/1",
+      "4W4/1/0/1",
+      "1VT/1/0/1",
+      "4W1/1/0/2",
+      "F0/1/0/2",
+      "4W3/3/0/3",
+      "K5/3/0/3",
+      "MP/3/0/3",
+      "4X2/3/0/3",
+      "JV/3/0/3",
+      "4W5/3/0/3",
+      "3QQ/3/0/3",
+      "BR/3/0/3",
+      "AS/2/0/5",
+      "13F/2/0/5",
+      "4X4/2/0/5",
+      "M2/2/0/5",
+      "149/2/0/5",
+      "GFA/2/0/5",
+      "DC/2/0/5"
+     ],
+     "c": [
+      "BR/3"
+     ],
+     "vc": [],
+     "f": [],
+     "iw": [
+      "JX/1",
+      "5GN/1",
+      "4W4/1"
+     ],
+     "ij": [],
+     "ro": [],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "QAM"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "MN"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "7X"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "2AB"
+      }
+     ]
+    },
+    {
+     "gi": 22851,
+     "tf": "R",
+     "ft": 2,
+     "st": 1,
+     "pf": [
+      "5EX/3/0/3",
+      "M2/2/0/5",
+      "4W4/1/1/1",
+      "JX/1/1/1",
+      "4W1/1/0/2",
+      "CZY/1/1/1",
+      "K5/3/1/3",
+      "MP/3/1/3",
+      "4W5/3/1/3",
+      "BR/3/1/3",
+      "4X2/3/1/3",
+      "8B/2/0/5",
+      "4X4/2/1/5",
+      "13F/2/0/5",
+      "DC/2/1/5",
+      "AS/2/1/5"
+     ],
+     "c": [
+      "BR/3"
+     ],
+     "vc": [],
+     "f": [],
+     "iw": [
+      "JX/1",
+      "4W1/1"
+     ],
+     "ij": [],
+     "ro": [],
+     "ss": [
+      {
+       "title": "Head Coach",
+       "pfkey": "QAM"
+      },
+      {
+       "title": "Batting Coach",
+       "pfkey": "MN"
+      },
+      {
+       "title": "Bowling Coach",
+       "pfkey": "7X"
+      },
+      {
+       "title": "Fielding Coach",
+       "pfkey": "2AB"
+      }
+     ]
+    }
+   ],
+   "w": [],
+   "ms": [],
+   "af": 2
+  }
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapDataseriesmain": {
+  "p": [
+   {
+    "f_key": "BR",
+    "n": "Mitchell Santner"
+   },
+   {
+    "f_key": "MP",
+    "n": "Glenn Phillips"
+   },
+   {
+    "f_key": "AXL",
+    "n": "Naman Dhir"
+   },
+   {
+    "f_key": "2X",
+    "n": "Rohit Sharma"
+   },
+   {
+    "f_key": "4I",
+    "n": "Virat Kohli"
+   },
+   {
+    "f_key": "B1",
+    "n": "Shreyas Iyer"
+   },
+   {
+    "f_key": "AK",
+    "n": "KL Rahul"
+   },
+   {
+    "f_key": "O5",
+    "n": "Shubman Gill"
+   },
+   {
+    "f_key": "177",
+    "n": "Kumar Kushagra"
+   },
+   {
+    "f_key": "ES",
+    "n": "Ruturaj Gaikwad"
+   },
+   {
+    "f_key": "CM",
+    "n": "Ishan Kishan"
+   },
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "8C5",
+    "n": "Anshul Kamboj"
+   },
+   {
+    "f_key": "A9",
+    "n": "Axar Patel"
+   },
+   {
+    "f_key": "7OV",
+    "n": "Nitish Kumar Reddy"
+   },
+   {
+    "f_key": "60B",
+    "n": "Auqib Nabi"
+   },
+   {
+    "f_key": "75",
+    "n": "Kuldeep Yadav"
+   },
+   {
+    "f_key": "E5",
+    "n": "Arshdeep Singh"
+   },
+   {
+    "f_key": "EF",
+    "n": "Prasidh Krishna"
+   },
+   {
+    "f_key": "E1",
+    "n": "Mohammed Siraj"
+   },
+   {
+    "f_key": "5UZ",
+    "n": "Yash Ravisingh Thakur"
+   },
+   {
+    "f_key": "7O3",
+    "n": "Gurnoor Brar"
+   },
+   {
+    "f_key": "16J",
+    "n": "Dhruv Jurel"
+   },
+   {
+    "f_key": "15K",
+    "n": "Yashasvi Jaiswal"
+   },
+   {
+    "f_key": "EI",
+    "n": "Devdutt Padikkal"
+   },
+   {
+    "f_key": "CL",
+    "n": "Rishabh Pant"
+   },
+   {
+    "f_key": "6M2",
+    "n": "B Sai Sudharsan"
+   },
+   {
+    "f_key": "7",
+    "n": "Ravindra Jadeja"
+   },
+   {
+    "f_key": "LQ",
+    "n": "Washington Sundar"
+   },
+   {
+    "f_key": "AJ",
+    "n": "Jasprit Bumrah"
+   },
+   {
+    "f_key": "5KW",
+    "n": "Akash Deep"
+   },
+   {
+    "f_key": "72",
+    "n": "Sanju Samson"
+   },
+   {
+    "f_key": "DBT",
+    "n": "Vaibhav Sooryavanshi"
+   },
+   {
+    "f_key": "EJ",
+    "n": "Shivam Dube"
+   },
+   {
+    "f_key": "1DH",
+    "n": "Abhishek Sharma"
+   },
+   {
+    "f_key": "EK",
+    "n": "Varun Chakaravarthy"
+   },
+   {
+    "f_key": "DCZ",
+    "n": "Prince Yadav"
+   },
+   {
+    "f_key": "7RU",
+    "n": "Mayank Yadav"
+   },
+   {
+    "f_key": "36",
+    "n": "Bhuvneshwar Kumar"
+   },
+   {
+    "f_key": "JX",
+    "n": "Tim Seifert"
+   },
+   {
+    "f_key": "5GN",
+    "n": "Mitchell Hay"
+   },
+   {
+    "f_key": "4W4",
+    "n": "Finn Allen"
+   },
+   {
+    "f_key": "1VT",
+    "n": "Will Young"
+   },
+   {
+    "f_key": "4W1",
+    "n": "Devon Conway"
+   },
+   {
+    "f_key": "F0",
+    "n": "Tom Latham"
+   },
+   {
+    "f_key": "4W3",
+    "n": "Rachin Ravindra"
+   },
+   {
+    "f_key": "K5",
+    "n": "Daryl Mitchell"
+   },
+   {
+    "f_key": "4X2",
+    "n": "Nathan Smith"
+   },
+   {
+    "f_key": "JV",
+    "n": "Mark Chapman"
+   },
+   {
+    "f_key": "4W5",
+    "n": "Michael Bracewell"
+   },
+   {
+    "f_key": "3QQ",
+    "n": "Nick Kelly"
+   },
+   {
+    "f_key": "AS",
+    "n": "Matt Henry"
+   },
+   {
+    "f_key": "13F",
+    "n": "Kyle Jamieson"
+   },
+   {
+    "f_key": "4X4",
+    "n": "Jacob Duffy"
+   },
+   {
+    "f_key": "M2",
+    "n": "Blair Tickner"
+   },
+   {
+    "f_key": "149",
+    "n": "Kristian Clarke"
+   },
+   {
+    "f_key": "GFA",
+    "n": "Matthew John Fisher"
+   },
+   {
+    "f_key": "DC",
+    "n": "Lockie Ferguson"
+   },
+   {
+    "f_key": "5EX",
+    "n": "Josh Clarkson"
+   },
+   {
+    "f_key": "CZY",
+    "n": "Bevon-John Jacobs"
+   },
+   {
+    "f_key": "8B",
+    "n": "Adam Milne"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   },
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "Q",
+    "n": "Australia",
+    "sn": "AUS",
+    "cc": "1-#C5C541",
+    "uc": "#35A552",
+    "dc": "#0D5F23"
+   },
+   {
+    "f_key": "P",
+    "n": "South Africa",
+    "sn": "SA",
+    "cc": "0-#6AA164",
+    "uc": "#30AF6A",
+    "dc": "#156C3D"
+   },
+   {
+    "f_key": "W",
+    "n": "Bangladesh",
+    "sn": "BAN",
+    "cc": "0-#6E8047",
+    "uc": "#B75A0E",
+    "dc": "#3E4D1C"
+   },
+   {
+    "f_key": "S",
+    "n": "England",
+    "sn": "ENG",
+    "cc": "0-#5D83A3",
+    "uc": "#4662AC",
+    "dc": "#213365"
+   },
+   {
+    "f_key": "T",
+    "n": "Sri Lanka",
+    "sn": "SL",
+    "cc": "0-#2B437F",
+    "uc": "#3B5FB9",
+    "dc": "#213C7F"
+   },
+   {
+    "f_key": "V",
+    "n": "West Indies",
+    "sn": "WI",
+    "cc": "0-#763449",
+    "uc": "#A01D48",
+    "dc": "#761031"
+   },
+   {
+    "f_key": "U",
+    "n": "Pakistan",
+    "sn": "PAK",
+    "cc": "0-#46857B",
+    "uc": "#01984B",
+    "dc": "#01572B"
+   }
+  ],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   }
+  ],
+  "u": []
+ }
+}

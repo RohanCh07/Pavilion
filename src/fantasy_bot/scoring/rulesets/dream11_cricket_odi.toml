@@ -1,0 +1,74 @@
+# Cricket scoring ruleset for one-day matches (Dream11 ODI style).
+# Used for ODIs, List A and other 50-over matches; see dream11_cricket.toml for T20s.
+# Points are computed from raw scorecard stats. Check the values against the current
+# Dream11 ODI rules and edit freely. See docs/SCORING.md for the format.
+
+sport = "cricket"
+name = "Dream11 Cricket (ODI)"
+version = "1"
+format = "odi"
+
+[appearance]
+playing_xi = 4
+
+[batting]
+run = 1
+four_bonus = 4
+six_bonus = 6
+duck = -3
+duck_exempt = ["bowler"]
+milestones_cumulative = false     # only the highest milestone reached counts
+milestones = [
+    { runs = 25, points = 4 },
+    { runs = 50, points = 8 },
+    { runs = 75, points = 12 },
+    { runs = 100, points = 16 },
+    { runs = 125, points = 20 },
+    { runs = 150, points = 24 },
+]
+
+[bowling]
+wicket = 25
+lbw_bowled_bonus = 8
+maiden = 4
+hauls_cumulative = false
+hauls = [
+    { wickets = 4, points = 4 },
+    { wickets = 5, points = 8 },
+    { wickets = 6, points = 12 },
+]
+# Dot balls aren't scored: CREX scorecards don't publish them.
+
+[fielding]
+catch = 8
+catch_bonus = { catches = 3, points = 4 }
+stumping = 12
+run_out_direct = 12
+run_out_assisted = 6
+
+[strike_rate]
+min_balls = 20
+exempt = ["bowler"]
+bands = [
+    { above = 140, points = 6 },
+    { above = 120, max = 140, points = 4 },
+    { min = 100, max = 120, points = 2 },
+    { min = 40, max = 50, points = -2 },
+    { min = 30, below = 40, points = -4 },
+    { below = 30, points = -6 },
+]
+
+[economy]
+min_balls = 30            # 5 overs
+bands = [
+    { below = 2.5, points = 6 },
+    { min = 2.5, below = 3.5, points = 4 },
+    { min = 3.5, max = 4.5, points = 2 },
+    { min = 7, max = 8, points = -2 },
+    { above = 8, max = 9, points = -4 },
+    { above = 9, points = -6 },
+]
+
+[multipliers]
+captain = 2.0
+vice_captain = 1.5

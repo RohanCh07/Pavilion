@@ -1,0 +1,81 @@
+# Cricket scoring ruleset (Dream11 T20 style).
+# Points are computed by the bot from raw scorecard stats; nothing here comes from the data
+# source. Check the values against the current Dream11 T20 rules and edit freely.
+# See docs/SCORING.md for the format.
+
+sport = "cricket"
+name = "Dream11 Cricket (T20)"
+version = "2"
+format = "t20"
+
+# Other formats use their own files; a match picks its rules from its format on CREX
+# (T20I/T20/T10 -> these rules, ODI/List A -> odi, Test/First-class -> test).
+[formats]
+odi = "dream11_cricket_odi"
+test = "dream11_cricket_test"
+
+[appearance]
+playing_xi = 4
+
+[batting]
+run = 1
+four_bonus = 4            # on top of the runs
+six_bonus = 6             # on top of the runs
+duck = -2                 # out for 0
+duck_exempt = ["bowler"]
+# Only the highest milestone reached counts; set true to add every milestone passed.
+milestones_cumulative = false
+milestones = [
+    { runs = 25, points = 4 },
+    { runs = 50, points = 8 },
+    { runs = 75, points = 12 },
+    { runs = 100, points = 16 },
+]
+
+[bowling]
+wicket = 30               # excludes run outs
+lbw_bowled_bonus = 8
+maiden = 12
+# Only the highest haul counts; set true to add every haul passed.
+hauls_cumulative = false
+hauls = [
+    { wickets = 3, points = 4 },
+    { wickets = 4, points = 8 },
+    { wickets = 5, points = 12 },
+]
+# Dot balls (+1 each in Dream11 T20) aren't scored: CREX scorecards don't publish them.
+
+[fielding]
+catch = 8
+catch_bonus = { catches = 3, points = 4 }
+stumping = 12
+run_out_direct = 12       # the only fielder involved
+run_out_assisted = 6      # each of two fielders involved
+
+# Bands use min/max (inclusive) and above/below (strict). The first matching band wins.
+[strike_rate]
+min_balls = 10
+exempt = ["bowler"]
+bands = [
+    { above = 170, points = 6 },
+    { above = 150, max = 170, points = 4 },
+    { min = 130, max = 150, points = 2 },
+    { min = 60, max = 70, points = -2 },
+    { min = 50, below = 60, points = -4 },
+    { below = 50, points = -6 },
+]
+
+[economy]
+min_balls = 12            # 2 overs
+bands = [
+    { below = 5, points = 6 },
+    { min = 5, below = 6, points = 4 },
+    { min = 6, max = 7, points = 2 },
+    { min = 10, max = 11, points = -2 },
+    { above = 11, max = 12, points = -4 },
+    { above = 12, points = -6 },
+]
+
+[multipliers]
+captain = 2.0
+vice_captain = 1.5

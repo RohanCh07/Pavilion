@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fantasy-points-bot"
+version = "0.1.0"
+description = "Telegram bot that tracks your fantasy football or cricket squad and pushes live points updates."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot[job-queue]>=22.0",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "SQLAlchemy[asyncio]>=2.0.30",
+    "aiosqlite>=0.20",
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115", "uvicorn>=0.30"]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5", "fastapi>=0.115", "uvicorn>=0.30"]
+postgres = ["asyncpg>=0.29"]
+
+[project.scripts]
+fantasy-bot = "fantasy_bot.__main__:main"
+fantasy-api = "fantasy_bot.api.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fantasy_bot = ["scoring/rulesets/*.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "ASYNC"]

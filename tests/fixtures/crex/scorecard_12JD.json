@@ -1,0 +1,276 @@
+{
+ "match-12JD": {
+  "ft": 2,
+  "mn": "2",
+  "s": 2,
+  "t": "2026-10-24T12:30:00.000Z",
+  "v": "Hagley Oval, Christchurch",
+  "team1": {
+   "name": "New Zealand",
+   "fkey": "R"
+  },
+  "team2": {
+   "name": "India",
+   "fkey": "O"
+  },
+  "sf": "2GR",
+  "dt": 3377699741002338,
+  "winner_team_fkey": "O",
+  "fkey": "12JD"
+ },
+ "https://api.goscorer.com/api/v3/getSV3": {
+  "B": "India won by 4 wickets 🏆",
+  "a": "R.O",
+  "j": "180/5(20.0",
+  "k": "181/6(19.5"
+ },
+ "https://api.goscorer.com/api/v3/getSC4": [
+  {
+   "a": [
+    "36.50.24.0.1",
+    "E5.33.24.0.2",
+    "DCZ.30.24.0.1",
+    "AXL.7.6.0.0",
+    "A9.28.24.0.0",
+    "7OV.31.18.0.1"
+   ],
+   "b": [
+    "JX.7.6.0.1.9.9.2.E5.15Q/31.12-146.32/",
+    "4W4.16.14.0.1.32.41.1.DCZ/28.95-171.14/",
+    "K5.6.5.1.0.18.18.2.36.15Q/26.86-140.63/",
+    "MP.70.43.4.4.108.157.2.E5.AXL/32.89-144.21/",
+    "CZY.58.46.5.1.113.165.2.7OV.A9/26.75-148.61/",
+    "BR.4.5.0.0/20.52-130.66",
+    "4W5.10.2.1.1/20.05-133.64",
+    "4X2/2.00-50.00",
+    "AS/5.88-94.00",
+    "4X4/8.00-97.56",
+    "DC/4.22-80.85"
+   ],
+   "c": "R",
+   "cd": 1,
+   "d": "180/5(120",
+   "e": "0.1.7.1.0",
+   "im": "",
+   "p": [
+    "JX.7.6.4W4.2.3.9.9",
+    "4W4.3.4.K5.6.5.9.9",
+    "4W4.11.7.MP.9.7.23.14",
+    "MP.61.36.CZY.50.41.116.77",
+    "CZY.8.5.BR.0.0.8.5",
+    "BR.4.5.4W5.10.2.15.7"
+   ],
+   "st": "1",
+   "ts": "&1xKYSb",
+   "x": "BR/JX"
+  },
+  {
+   "a": [
+    "AS.11.12.1.0",
+    "4X4.41.23.0.1",
+    "DC.37.18.0.0",
+    "4W5.35.24.0.0",
+    "4X2.34.18.0.1",
+    "BR.21.24.0.4"
+   ],
+   "b": [
+    "72.14.17.1.1.28.40.2.4X4.MP/27.72-160.61/",
+    "1DH.27.21.3.1.52.56.2.BR.4X2/32.31-194.62/",
+    "DBT.4.8.0.0.38.44.2.4X2.K5/30.75-186.36/",
+    "B1.7.11.0.0.63.69.1.BR/32.15-141.60/",
+    "A9.11.9.0.1.65.70.2.BR.K5/16.55-129.55/",
+    "15Q.51.26.6.1/42.95-146.47",
+    "AXL.31.17.1.3.89.112.2.BR.MP/40.00-285.71/",
+    "7OV.26.13.1.1/31.00-170.33",
+    "36/8.38-71.28",
+    "E5/6.26-102.59",
+    "DCZ/21.00-210.00"
+   ],
+   "c": "O",
+   "cd": 0,
+   "d": "181/6(119",
+   "e": "0.2.5.3.0",
+   "im": "",
+   "p": [
+    "72.14.17.1DH.22.13.40.30",
+    "1DH.0.2.DBT.4.8.4.10",
+    "1DH.5.6.B1.5.8.12.14",
+    "B1.2.3.A9.11.8.13.11",
+    "A9.0.1.15Q.1.1.1.2",
+    "15Q.9.8.AXL.31.17.42.25",
+    "15Q.41.17.7OV.26.13.69.30"
+   ],
+   "st": "1",
+   "x": "B1/CM"
+  }
+ ],
+ "https://oc.crickapi.com/mapping/getHomeMapDataliveparsing": {
+  "p": [
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "7OV",
+    "n": "Nitish Kumar Reddy"
+   },
+   {
+    "f_key": "4X4",
+    "n": "Jacob Duffy"
+   },
+   {
+    "f_key": "AXL",
+    "n": "Naman Dhir"
+   },
+   {
+    "f_key": "2",
+    "n": "Ganapathi Vignesh"
+   },
+   {
+    "f_key": "4X2",
+    "n": "Nathan Smith"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   }
+  ],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   }
+  ],
+  "u": []
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapData": {
+  "p": [
+   {
+    "f_key": "JX",
+    "n": "Tim Seifert"
+   },
+   {
+    "f_key": "E5",
+    "n": "Arshdeep Singh"
+   },
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "4W4",
+    "n": "Finn Allen"
+   },
+   {
+    "f_key": "DCZ",
+    "n": "Prince Yadav"
+   },
+   {
+    "f_key": "K5",
+    "n": "Daryl Mitchell"
+   },
+   {
+    "f_key": "36",
+    "n": "Bhuvneshwar Kumar"
+   },
+   {
+    "f_key": "MP",
+    "n": "Glenn Phillips"
+   },
+   {
+    "f_key": "AXL",
+    "n": "Naman Dhir"
+   },
+   {
+    "f_key": "CZY",
+    "n": "Bevon-John Jacobs"
+   },
+   {
+    "f_key": "7OV",
+    "n": "Nitish Kumar Reddy"
+   },
+   {
+    "f_key": "A9",
+    "n": "Axar Patel"
+   },
+   {
+    "f_key": "BR",
+    "n": "Mitchell Santner"
+   },
+   {
+    "f_key": "4W5",
+    "n": "Michael Bracewell"
+   },
+   {
+    "f_key": "4X2",
+    "n": "Nathan Smith"
+   },
+   {
+    "f_key": "AS",
+    "n": "Matt Henry"
+   },
+   {
+    "f_key": "4X4",
+    "n": "Jacob Duffy"
+   },
+   {
+    "f_key": "DC",
+    "n": "Lockie Ferguson"
+   },
+   {
+    "f_key": "72",
+    "n": "Sanju Samson"
+   },
+   {
+    "f_key": "1DH",
+    "n": "Abhishek Sharma"
+   },
+   {
+    "f_key": "DBT",
+    "n": "Vaibhav Sooryavanshi"
+   },
+   {
+    "f_key": "B1",
+    "n": "Shreyas Iyer"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   }
+  ],
+  "v": [],
+  "s": [],
+  "u": []
+ }
+}

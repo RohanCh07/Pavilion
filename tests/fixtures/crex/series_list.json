@@ -1,0 +1,516 @@
+{
+ "https://stats.crickapi.com/home/getHomeSeries": [
+  {
+   "id": 3380,
+   "sf": "2EW",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "AUSvsSA",
+   "nk": 0,
+   "format": [
+    1,
+    3
+   ],
+   "stid": "1",
+   "sd": "2026-09-24T00:00:00.000Z",
+   "ed": "2026-10-31T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2EW.png"
+  },
+  {
+   "id": 3647,
+   "sf": "2M3",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Tri Series in PAK",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "1",
+   "sd": "2026-10-18T00:00:00.000Z",
+   "ed": "2026-10-31T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2M3.png"
+  },
+  {
+   "id": 3667,
+   "sf": "2MN",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Tri Series in UAE",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "1",
+   "sd": "2026-10-17T00:00:00.000Z",
+   "ed": "2026-10-23T00:00:00.000Z",
+   "sst": 2,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MN.png"
+  },
+  {
+   "id": 3712,
+   "sf": "2NU",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "IREvsNAM",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "1",
+   "sd": "2026-10-22T00:00:00.000Z",
+   "ed": "2026-11-01T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2NU.png"
+  },
+  {
+   "id": 3447,
+   "sf": "2GR",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "INDvsNZ",
+   "nk": 1,
+   "format": [
+    1,
+    2,
+    3
+   ],
+   "stid": "1",
+   "sd": "2026-10-22T00:00:00.000Z",
+   "ed": "2026-12-01T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2GR.png"
+  },
+  {
+   "id": 2213,
+   "sf": "1JK",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "CWC",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "1",
+   "sd": "2024-02-15T00:00:00.000Z",
+   "ed": "2027-09-30T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/1JK.png"
+  },
+  {
+   "id": 3673,
+   "sf": "2MT",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "CSAT20",
+   "nk": 0,
+   "format": [
+    2
+   ],
+   "stid": "27",
+   "sd": "2026-09-25T00:00:00.000Z",
+   "ed": "2026-11-14T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MT.png"
+  },
+  {
+   "id": 3499,
+   "sf": "2I5",
+   "g": 0,
+   "t": 0,
+   "qa": 0,
+   "tn": "ZIM-WvsIND-W",
+   "nk": 0,
+   "format": [
+    1,
+    2
+   ],
+   "stid": "1",
+   "sd": "2026-10-16T00:00:00.000Z",
+   "ed": "2026-10-28T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2I5.png"
+  },
+  {
+   "id": 2692,
+   "sf": "1WE",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "CWC",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "27",
+   "sd": "2024-09-25T00:00:00.000Z",
+   "ed": "2026-12-30T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/1WE.png"
+  },
+  {
+   "id": 3591,
+   "sf": "2KM",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Sheffield Shield",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-10-07T00:00:00.000Z",
+   "ed": "2027-03-29T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2KM.png"
+  },
+  {
+   "id": 3710,
+   "sf": "2NS",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "NCL",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-10-03T00:00:00.000Z",
+   "ed": "2026-11-14T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2NS.png"
+  },
+  {
+   "id": 3713,
+   "sf": "2NV",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "AFGU19vsBANU19",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "19",
+   "sd": "2026-10-16T00:00:00.000Z",
+   "ed": "2026-10-23T00:00:00.000Z",
+   "sst": 2,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2NV.png"
+  },
+  {
+   "id": 3670,
+   "sf": "2MQ",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "President Trophy",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-09-12T00:00:00.000Z",
+   "ed": "2026-10-31T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MQ.png"
+  },
+  {
+   "id": 3592,
+   "sf": "2KN",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "AUS One Day Cup",
+   "nk": 0,
+   "format": [
+    1
+   ],
+   "stid": "27",
+   "sd": "2026-09-18T00:00:00.000Z",
+   "ed": "2027-02-14T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2KN.png"
+  },
+  {
+   "id": 3675,
+   "sf": "2MV",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Ranji Elite",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-10-11T00:00:00.000Z",
+   "ed": "2027-03-02T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MV.png"
+  },
+  {
+   "id": 3676,
+   "sf": "2MW",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Ranji Plate",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-10-11T00:00:00.000Z",
+   "ed": "2027-01-28T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MW.png"
+  },
+  {
+   "id": 3724,
+   "sf": "2O6",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Emirates D20",
+   "nk": 0,
+   "format": [
+    2
+   ],
+   "stid": "27",
+   "sd": "2026-10-19T00:00:00.000Z",
+   "ed": "2026-11-05T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2O6.png"
+  },
+  {
+   "id": 3659,
+   "sf": "2MF",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "IND-AvsNZ-A",
+   "nk": 0,
+   "format": [
+    3
+   ],
+   "stid": "27",
+   "sd": "2026-10-24T00:00:00.000Z",
+   "ed": "2026-11-10T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2MF.png"
+  },
+  {
+   "id": 3723,
+   "sf": "2O5",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Global T20",
+   "nk": 0,
+   "format": [
+    2
+   ],
+   "stid": "27",
+   "sd": "2026-10-24T00:00:00.000Z",
+   "ed": "2026-11-03T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 0,
+   "img": "https://cricketvectors.akamaized.net/Series/2O5.png"
+  },
+  {
+   "id": 3722,
+   "sf": "2O4",
+   "g": 1,
+   "t": 0,
+   "qa": 0,
+   "tn": "Men's T20 WC Africa Q-C",
+   "nk": 0,
+   "format": [
+    2
+   ],
+   "stid": "1",
+   "sd": "2026-10-20T00:00:00.000Z",
+   "ed": "2026-10-25T00:00:00.000Z",
+   "sst": 1,
+   "istt": 0,
+   "brActive": 1,
+   "img": "https://cricketvectors.akamaized.net/Series/2O4.png"
+  }
+ ],
+ "https://oc.crickapi.com/mapping/getHomeMapDatahomeSeries": {
+  "p": [],
+  "t": [],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2EW",
+    "n": "Australia tour of South Africa 2026",
+    "sn": "AUS vs SA 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2M3",
+    "n": "ODI Tri Series in Pakistan 2026",
+    "sn": "Tri Series in PAK 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2MN",
+    "n": "ODI Tri-Nation Series in UAE 2026",
+    "sn": "Tri Series in UAE 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2NU",
+    "n": "Ireland tour of Namibia 2026",
+    "sn": "IRE vs NAM 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1JK",
+    "n": "Men's CWC League 2 2023-27",
+    "sn": "CWC League-2 2023-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2MT",
+    "n": "CSA Pro T20 Cup 2026",
+    "sn": "CSA T20 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2I5",
+    "n": "Zimbabwe Women tour of India 2026",
+    "sn": "ZIM-W vs IND-W 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1WE",
+    "n": "Men's CWC Challenge League A 2024-26",
+    "sn": "CWC League A 2024-26",
+    "tour": 0
+   },
+   {
+    "f_key": "2KM",
+    "n": "Sheffield Shield 2026-27",
+    "sn": "Sheffield Shield 2026-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2NS",
+    "n": "Bangladesh National League 2026",
+    "sn": "NCL 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2NV",
+    "n": "Afghanistan U19 vs Bangladesh U19 in Oman 2026",
+    "sn": "AFG-U19 vs BAN-U19 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2MQ",
+    "n": "President Trophy 2026",
+    "sn": "President Trophy 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2KN",
+    "n": "Australia Domestic One-Day Cup 2026-27",
+    "sn": "AUS One Day Cup 2026-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2MV",
+    "n": "Ranji Trophy Elite 2026-27",
+    "sn": "Ranji Elite 2026-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2MW",
+    "n": "Ranji Trophy Plate 2026-27",
+    "sn": "Ranji Plate 2026-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2O6",
+    "n": "Emirates D20 League 2026",
+    "sn": "Emirates D20 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2MF",
+    "n": "India A tour of New Zealand 2026",
+    "sn": "IND-A vs NZ-A 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2O5",
+    "n": "Global T20 Canada 2026",
+    "sn": "Global T20 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2O4",
+    "n": "Men's T20 World Cup Africa Sub Regional Qualifier C 2026",
+    "sn": "Men's T20 WC Africa Q-C 2026",
+    "tour": 0
+   }
+  ],
+  "u": []
+ }
+}

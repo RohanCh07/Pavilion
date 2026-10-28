@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#2a1700",
+          "surface-container-highest": "#d3e4fe",
+          "on-tertiary": "#ffffff",
+          "surface-variant": "#d3e4fe",
+          "primary-fixed": "#6ffbbe",
+          "primary": "#006c49",
+          "primary-fixed-dim": "#4edea3",
+          "outline": "#6c7a71",
+          "outline-variant": "#bbcabf",
+          "tertiary-fixed-dim": "#ffb95f",
+          "tertiary-fixed": "#ffddb8",
+          "on-surface": "#0b1c30",
+          "surface-container-low": "#eff4ff",
+          "on-background": "#0b1c30",
+          "secondary-fixed": "#dae2fd",
+          "on-secondary-fixed-variant": "#3f465c",
+          "on-surface-variant": "#3c4a42",
+          "secondary-fixed-dim": "#bec6e0",
+          "on-primary-container": "#00422b",
+          "secondary": "#565e74",
+          "background": "#f8f9ff",
+          "primary-container": "#10b981",
+          "on-secondary": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface-container": "#e5eeff",
+          "on-error-container": "#93000a",
+          "secondary-container": "#dae2fd",
+          "error": "#ba1a1a",
+          "surface-bright": "#f8f9ff",
+          "on-primary-fixed-variant": "#005236",
+          "surface": "#f8f9ff",
+          "inverse-surface": "#213145",
+          "tertiary-container": "#e29100",
+          "on-primary-fixed": "#002113",
+          "surface-container-high": "#dce9ff",
+          "tertiary": "#855300",
+          "on-tertiary-container": "#523200",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#131b2e",
+          "surface-dim": "#cbdbf5",
+          "inverse-on-surface": "#eaf1ff",
+          "on-secondary-container": "#5c647a",
+          "surface-tint": "#006c49",
+          "inverse-primary": "#4edea3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-2xl": "2rem",
+          "space-md": "0.75rem",
+          "space-2xs": "0.125rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "gutter-desktop": "1.5rem",
+          "margin": "1rem",
+          "space-xl": "1.5rem",
+          "margin-tablet": "1.5rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Geist"
+          ],
+          "headline-lg-mobile": [
+            "Geist"
+          ],
+          "body-md": [
+            "Geist"
+          ],
+          "label-meta": [
+            "Geist"
+          ],
+          "label-numeric": [
+            "JetBrains Mono"
+          ],
+          "headline-xl": [
+            "Geist"
+          ],
+          "headline-md": [
+            "Geist"
+          ],
+          "body-sm": [
+            "Geist"
+          ],
+          "label-badge": [
+            "Geist"
+          ],
+          "body-lg": [
+            "Geist"
+          ],
+          "headline-lg": [
+            "Geist"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-meta": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-numeric": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-badge": [
+            "11px",
+            {
+              "lineHeight": "12px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="hidden lg:flex fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest flex-col justify-between z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Pavilion Fantasy Cricket Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XUcGAA2mQ5PNFLKrikL5fErY8nsYSMdrv9ECB-96hzfwYeOMiT89SROZkiwK3VijXGpwqsZ_DY5ZauribH-j8Z_pCbekKQSzddePnT0sc0EFzZ18xc7FV3REqzQ-WvuItrjcyKrlWHWgytXJ-9LRLxM-IKCcU6-zdC2Ug3lZBhtl3Ztbp_68qG-_EkccZE0LYXzl3s-6acwusR35rv0Hzts2pHvBljnz82xYJsuhyCcJb8vIAUkyVhWRY"/><span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Pavilion</span></div><span class="px-space-xs py-space-2xs rounded bg-surface-container-low text-primary font-label-badge text-label-badge uppercase tracking-wider font-bold">PRO</span></div><div class="px-space-lg py-space-xs"><p class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold mb-space-xs">Navigation</p></div><nav class="flex flex-col gap-space-2xs px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="series" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">home</span><span>Series</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="my-teams" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">emoji_events</span><span>My Teams</span></div><span class="px-space-xs py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-numeric text-label-numeric font-medium">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="match-center" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Match Center</span></div><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leaderboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">leaderboard</span><span>Leaderboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="rules-scoring" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Rules &amp; Scoring</span></div></a></nav></div><div class="flex flex-col p-space-sm gap-space-xs bg-surface-container-low/50 rounded-xl m-space-sm"><div class="flex items-center justify-between px-space-sm py-space-2xs"><div class="flex items-center gap-space-2xs text-outline font-label-meta text-label-meta"><span class="h-1.5 w-1.5 rounded-full bg-primary-container"></span><span>Syncing fast · 12ms</span></div><button aria-label="Theme Toggle" class="text-on-surface-variant hover:text-on-surface p-space-2xs" type="button"><span class="material-symbols-outlined text-[16px]">light_mode</span></button></div><div class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg hover:bg-surface-container-lowest transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwrvk7DDbcIi9Js7G_icjsfHY7WlQfUzCv9jOtQOodwdUbYrVzBpY3iWm538pJNjxkkBnPQb2nJHApo-ydzaknNqROiAYcA9yA2VtpdApOzzL8zTY7T_Q7rA3sh-2CXsmEAHfUZ9GZf7gXzM3Q-L6A_56KPdFO3uxeN562_gR-D_HmQmxq00VCRHVxXZ1R13wC4uWvco60CcUkMN9JXG9rlilioUpErpmnxt4-y89S_X1J9_fZjMGg"/><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Alex Sharma</span><span class="font-label-numeric text-label-numeric text-outline">1,420 pts overall</span></div><span class="material-symbols-outlined text-[18px] text-outline">unfold_more</span></div></div></aside><div class="lg:pl-60 flex flex-col min-h-screen"><header class="fixed top-0 right-0 left-0 lg:left-60 h-16 bg-surface-container-lowest/85 backdrop-blur-xl z-30 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-gutter lg:px-gutter-desktop"><div class="h-16 w-full flex items-center justify-between gap-space-md"><div class="flex lg:hidden items-center gap-space-sm"><img alt="Pavilion Fantasy Cricket Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XUcGAA2mQ5PNFLKrikL5fErY8nsYSMdrv9ECB-96hzfwYeOMiT89SROZkiwK3VijXGpwqsZ_DY5ZauribH-j8Z_pCbekKQSzddePnT0sc0EFzZ18xc7FV3REqzQ-WvuItrjcyKrlWHWgytXJ-9LRLxM-IKCcU6-zdC2Ug3lZBhtl3Ztbp_68qG-_EkccZE0LYXzl3s-6acwusR35rv0Hzts2pHvBljnz82xYJsuhyCcJb8vIAUkyVhWRY"/><span class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface tracking-tight">Pavilion</span><span class="px-space-xs py-space-2xs rounded bg-surface-container-low text-primary font-label-badge text-label-badge font-bold">LIVE</span></div><div class="hidden md:flex items-center flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">search</span><input class="w-full pl-9 pr-4 py-space-xs bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search series, matches, players..." type="text"/></div></div><div class="flex items-center gap-space-sm"><button class="hidden sm:inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors hover:text-on-primary" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Team</span></button><button aria-label="Notifications" class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-error"></span></button><div class="flex lg:hidden items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwrvk7DDbcIi9Js7G_icjsfHY7WlQfUzCv9jOtQOodwdUbYrVzBpY3iWm538pJNjxkkBnPQb2nJHApo-ydzaknNqROiAYcA9yA2VtpdApOzzL8zTY7T_Q7rA3sh-2CXsmEAHfUZ9GZf7gXzM3Q-L6A_56KPdFO3uxeN562_gR-D_HmQmxq00VCRHVxXZ1R13wC4uWvco60CcUkMN9JXG9rlilioUpErpmnxt4-y89S_X1J9_fZjMGg"/></div></div></div></header><main class="w-full pt-16 pb-20 lg:pb-space-xl bg-surface px-gutter lg:px-gutter-desktop"><div class="flex flex-col w-full">
+<!-- Top Context & Deadline Notice Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-sm mb-space-lg">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-lowest text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">sports_cricket</span>
+</span>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">ICC T20 World Cup</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">India vs South Africa · Grand Final</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">timer</span>
+<span>Deadline: Match starts in <strong class="text-on-surface font-semibold">42m 18s</strong> — Rosters freeze strictly at toss (18:30 IST)</span>
+</p>
+</div>
+</div>
+<!-- Editable Team Name & Save State Indicator -->
+<div class="flex items-center gap-space-sm self-start md:self-auto bg-surface-container-lowest py-space-xs px-space-md rounded-lg shadow-sm">
+<div class="flex items-center gap-1.5">
+<input aria-label="Editable Team Name" class="font-body-md text-body-md font-semibold text-on-surface bg-transparent focus:outline-none w-40 sm:w-48 text-ellipsis" id="team-name-input" type="text" value="Thunder Strikers XI"/>
+<button class="text-outline hover:text-on-surface transition-colors p-1" id="rename-pen" title="Rename Team">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<div class="h-4 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1 text-primary font-label-meta text-label-meta font-medium">
+<span class="material-symbols-outlined text-[15px]">cloud_done</span>
+<span id="save-indicator">Saved draft</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry HUD & Squad Constraint Dashboard -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md lg:p-space-lg shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- XI Progress Gauge & Counter -->
+<div class="lg:col-span-4 flex items-center gap-space-md">
+<div class="relative w-14 h-14 flex items-center justify-center shrink-0">
+<svg class="w-14 h-14 -rotate-90 transform" viewbox="0 0 48 48">
+<circle class="text-surface-container" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-width="4.5"></circle>
+<circle class="text-primary-container transition-all duration-300" cx="24" cy="24" fill="transparent" id="roster-progress-ring" r="20" stroke="currentColor" stroke-dasharray="125.66" stroke-dashoffset="0" stroke-linecap="round" stroke-width="4.5"></circle>
+</svg>
+<span class="absolute font-label-numeric text-headline-md font-bold text-on-surface" id="roster-count-text">11</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface leading-tight">
+<span id="picked-count">11</span> / 11 <span class="font-body-sm text-body-sm font-normal text-outline">Selected</span>
+</span>
+<span class="font-label-meta text-label-meta text-primary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            Valid XI Completed
+          </span>
+</div>
+</div>
+<!-- Credit Remaining & Team Split Balance -->
+<div class="lg:col-span-8 flex flex-wrap items-center justify-start lg:justify-end gap-space-sm">
+<!-- Team caps -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">IND</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface" id="ind-count">6/7</span>
+</div>
+<span class="text-outline text-xs">•</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">SA</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface" id="sa-count">5/7</span>
+</div>
+</div>
+<!-- Remaining Credits -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">toll</span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">Credits Left:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface" id="credits-left">14.5</span>
+<span class="font-label-numeric text-label-numeric text-outline">/ 100</span>
+</div>
+<!-- Captain & Vice Captain Status Chips -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-space-2xs rounded-md">
+<span class="w-4 h-4 rounded-full bg-on-surface text-surface flex items-center justify-center font-label-badge text-[9px] font-bold">C</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate max-w-[80px]" id="hud-captain">V. Kohli</span>
+<span class="font-label-badge text-label-badge text-primary-container font-bold">2x</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-space-2xs rounded-md">
+<span class="w-4 h-4 rounded-full bg-secondary text-surface flex items-center justify-center font-label-badge text-[9px] font-bold">VC</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate max-w-[80px]" id="hud-vice">J. Bumrah</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant font-bold">1.5x</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Role Balance Pill Tracker -->
+<div class="mt-space-md pt-space-sm border-0 border-t border-surface-container-high/60 grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-low/80 p-space-xs rounded-lg flex items-center justify-between">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">WK (1-4)</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface flex items-center gap-1">
+<span id="count-wk">2</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</span>
+</div>
+<div class="bg-surface-container-low/80 p-space-xs rounded-lg flex items-center justify-between">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">BAT (3-6)</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface flex items-center gap-1">
+<span id="count-bat">4</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</span>
+</div>
+<div class="bg-surface-container-low/80 p-space-xs rounded-lg flex items-center justify-between">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">AR (1-4)</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface flex items-center gap-1">
+<span id="count-ar">2</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</span>
+</div>
+<div class="bg-surface-container-low/80 p-space-xs rounded-lg flex items-center justify-between">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold">BOWL (3-6)</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface flex items-center gap-1">
+<span id="count-bowl">3</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Multiplier Instructions Banner -->
+<div class="mb-space-md p-space-xs px-space-md rounded-lg bg-surface-container-high/60 flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">stars</span>
+<span>Assign your tactical multipliers: <strong class="text-on-surface font-semibold">C</strong> grants <strong>2x points</strong>, <strong class="text-on-surface font-semibold">VC</strong> grants <strong>1.5x points</strong>.</span>
+</div>
+<span class="font-label-meta text-label-meta text-outline font-medium">Click player C/VC tags directly</span>
+</div>
+<!-- Filter & Controls Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-md flex flex-col md:flex-row gap-space-sm items-stretch md:items-center justify-between">
+<!-- Team Filtering Tabs -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg self-start">
+<button class="team-filter-btn px-space-md py-space-xs rounded-md font-body-sm text-body-sm font-semibold bg-surface-container-lowest text-on-surface shadow-xs transition-all" data-team="ALL">
+        All (22)
+      </button>
+<button class="team-filter-btn px-space-md py-space-xs rounded-md font-body-sm text-body-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-team="IND">
+        India (11)
+      </button>
+<button class="team-filter-btn px-space-md py-space-xs rounded-md font-body-sm text-body-sm font-medium text-on-surface-variant hover:text-on-surface transition-all" data-team="SA">
+        South Africa (11)
+      </button>
+</div>
+<!-- Search Box -->
+<div class="relative flex-1 max-w-sm">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline pointer-events-none">search</span>
+<input class="w-full pl-9 pr-3 py-space-xs rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="player-search" placeholder="Search player name, team, or stats..." type="text"/>
+</div>
+<!-- Role Filter Chips -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+<button class="role-filter-btn px-space-sm py-space-2xs rounded-lg font-body-sm text-body-sm font-semibold bg-primary-container text-on-primary-container transition-all" data-role="ALL">
+        All Roles
+      </button>
+<button class="role-filter-btn px-space-sm py-space-2xs rounded-lg font-body-sm text-body-sm font-medium text-on-surface-variant bg-surface-container-low hover:text-on-surface transition-all" data-role="WK">
+        WK
+      </button>
+<button class="role-filter-btn px-space-sm py-space-2xs rounded-lg font-body-sm text-body-sm font-medium text-on-surface-variant bg-surface-container-low hover:text-on-surface transition-all" data-role="BAT">
+        BAT
+      </button>
+<button class="role-filter-btn px-space-sm py-space-2xs rounded-lg font-body-sm text-body-sm font-medium text-on-surface-variant bg-surface-container-low hover:text-on-surface transition-all" data-role="AR">
+        AR
+      </button>
+<button class="role-filter-btn px-space-sm py-space-2xs rounded-lg font-body-sm text-body-sm font-medium text-on-surface-variant bg-surface-container-low hover:text-on-surface transition-all" data-role="BOWL">
+        BOWL
+      </button>
+</div>
+</div>
+<!-- Player Roster Selector Grid/Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-24">
+<!-- Table Header (Desktop) -->
+<div class="hidden md:grid md:grid-cols-12 px-space-md py-space-sm bg-surface-container-low text-outline font-label-meta text-label-meta uppercase tracking-wider font-semibold">
+<div class="col-span-5">Player / Match Stats</div>
+<div class="col-span-2 text-center">Selected %</div>
+<div class="col-span-1 text-center">Form</div>
+<div class="col-span-1 text-center">Credits</div>
+<div class="col-span-2 text-center">Multiplier (C / VC)</div>
+<div class="col-span-1 text-right">Roster</div>
+</div>
+<!-- Players Container -->
+<div class="flex flex-col" id="player-list">
+<!-- Player 1: Virat Kohli -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.5" data-form="9.6" data-id="p1" data-in="true" data-name="Virat Kohli" data-role="BAT" data-sel="89" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Close up athletic portrait of a focused Indian cricket star batsman with beard and navy cap under stadium floodlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDInPbB4Sonzd7z6B5_1aMtgGZMRgm7dCaOhOPKazk5coF3meOPpKcX-eWj1xMK0AFTnMe8nVv6U7BMZ7lY2MlMqIgvzxP13_LeuGWWIoEnjwyh3v8TG_4wJsBA_VSnOzUZ_ktjjhF_dafPe2W8qgI_E-dQRKZpL63QQ9wDINRnpsT5MRMb4mOqNKkudBrMs1XfTpOSmBYfQLXzTx5qt9jZUgbcvoMlJv2KhTSYJ8_rdgdSIjl48TpU"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Virat Kohli</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • Avg: 48.6 • SR: 141.2</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">89%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">9.6</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.5</span>
+</div>
+<!-- Multiplier Chips -->
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-on-surface text-surface ring-2 ring-primary-container transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<!-- Add/Remove Toggle -->
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 2: Jasprit Bumrah -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.5" data-form="9.8" data-id="p2" data-in="true" data-name="Jasprit Bumrah" data-role="BOWL" data-sel="94" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Action portrait of world class fast bowler in blue kit ready to bowl with intense focused eyes under night lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkdgwiFjWz3F2M7yGCfdZuoMsxeJluHOPBPOsWETDLFtMPxVHd3jUzQpVSGV4LJCGa_U6S305Jxa53UJc4Y5HlEoRY_JvMo-ynaURr8mOFTB9hWUNSt7JvYOp0pg9GHkaZGCX4nNMCG5mHGTdrliXuTwVyMR8tra6susBlopFvO8GxpAbBtu7FvM9BhonQqRgx16XGGPJiWqtp8V67ARe_w8fWVPq6u7NrxQSpdG8e6fAMBcUAV-4R"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Jasprit Bumrah</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BOWL</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • Econ: 5.12 • Wkts: 15</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">94%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">9.8</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.5</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-secondary text-surface ring-2 ring-primary-container transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 3: Heinrich Klaasen -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="9.1" data-id="p3" data-in="true" data-name="Heinrich Klaasen" data-role="WK" data-sel="78" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African wicketkeeper batsman in green training uniform looking confident in a sunlit cricket stadium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJCNV-FzSCtX-EZ6tIpCT9HeVS1g3f7yH05xlJBWikV-yRiglCU-B5XawwuNvqF-rTLe1uTjk6o8kqi1pQjTGKqTr8Ex3Awiypxl_k4SjpbHyL9c9JJax0i6WAze8Ryag5dMJtHsoPEcqk2aSvpAYOxaljoWxgVIv24shjHIspQpdHpSRwQof8QBWfKtZt7_6Y6gF2_zmx4sKuHdnCOqQUlHKJaXBsPm0iMmNKQy1F0uzcXFqU9cUf"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Heinrich Klaasen</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">WK</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa • SR: 168.4 • 6s: 18</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">78%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">9.1</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 4: Hardik Pandya -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="8.9" data-id="p4" data-in="true" data-name="Hardik Pandya" data-role="AR" data-sel="84" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Dynamic portrait of charismatic Indian cricket all-rounder smiling with determined expression against modern stadium background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF208piV8qZi4qH_0Mgb-vJKygaHXOqzKQWUSkwgjybz3-iST9G8e7V69PddDVGyA2Ltzoz736vkRhdaUo72kEiNtvTyT4jAqe0hR6jPaKzVJDpCPHr59CotXE_0K4XW4C4kZyQNx-7_0zgcgppM483k6pmHj86sdiO8bn06JRT9_Yz0RrsrXEG97aPX_xONOA7nr9iv-xJI6lEpwT05T-24JONT3ga-SfjWhYHqPgKUvGkE8JfUjZ"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Hardik Pandya</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">AR</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • 144 runs • 11 wkts</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">84%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.9</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 5: Quinton de Kock -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="8.7" data-id="p5" data-in="true" data-name="Quinton de Kock" data-role="WK" data-sel="72" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African opening wicketkeeper batter portrait wearing helmet and focused on pre-match batting prep" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGi3IexZDXyloiKsoEPYJnJGGWLiRrOQftrsT6KESD-WzpZf-_Mmk046UbhFzsFb8j1uAzfecrDZf4YfJXNrrSVpIURFI0-A7LNDrM609BvwuTKJ8ibj_XYpzno3vthWE6aETofbJja89-G7vj7wbmsLmQES3tcJTweznVjHoGJVCxWBRpEdAlE78Iue8b_OpyFhCzhEJaJy7wyPjmr0Im-YIGLYaAOtXSTG8Z-VtRaf28yqZ1msq2"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Quinton de Kock</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">WK</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa • PP SR: 152.0</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">72%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.7</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 6: Rohit Sharma -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="8.8" data-id="p6" data-in="true" data-name="Rohit Sharma" data-role="BAT" data-sel="85" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Indian cricket captain in navy jersey looking calm and authoritative during warmups in a grand cricket venue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk3RSGBluMqnBvyKHynsS5gVefjlvpUuADSOhTAcX5pD6U39A-9d1gsHF4t1zs4VS2zVe4LYhsD9fr8urugM-_PacTfu2CnVOhldQh2kTkgF09QYTzFR4ffbFRweKM0KkKbwUeqNtTbb7gH3LCg6ej-ZKOh0mpJR3Q_KkQqxfa1kywY0sgZ-QMUaJcV_m6uQHEbS_-OdZnmsI8WsTbQwyXfxOiGIeuCj4tk_K4mv1YWLeqJMSA1Y8P"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Rohit Sharma</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India (C) • Avg: 36.8 • 6s: 15</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">85%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.8</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 7: Suryakumar Yadav -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="8.5" data-id="p7" data-in="true" data-name="Suryakumar Yadav" data-role="BAT" data-sel="81" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="T20 specialist batter smiling in team gear under clear stadium sky, sharp dynamic sports photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA9GwAPDXrcvqKRQADme2Nmp7kXjRr-TJGZEe2-aqetGv8L6rXBenaVFkRm8Ibi6wz4BBhGjOzoy6ACoAvNm5lJGKFoJAp1Pl2oDGcGaUm8w3jNNyjt4_X6eAxVrrJ9K2T2Bv2kjDXp46FJZozZJkpb9pqBP1qLCrpiqJdUXY8y1P10uET1bYHaecQkCEtczjhVGrrRJMTNPdj0w4v5L4MPeBDGo3Sm2nvyx8du9D461G2JrSChvX0"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Suryakumar Yadav</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • SR: 171.5 • 360 Degree</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">81%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.5</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 8: David Miller -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="8.5" data-form="8.3" data-id="p8" data-in="true" data-name="David Miller" data-role="BAT" data-sel="66" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African middle order power hitter with athletic physique in dark green jersey holding cricket bat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY9xZvIQeW-LnU3G6YRetaWagSOQimVHNGRCOkp86eAjdEd8zn0MPfmAoUEkT3s2f9dy5I-6kCs35C4hYmvCCVAkf99EcScuDas5ygfLAmzP_pUckCdVDKvOs3tekrJDN-KOrsAfPDIRTAcr9EjbPg3wWCaCcrnYuTOJGTVgYIkpAtOgrhGfWBKrq7q1hzo66_bCH13gZenvYLh8S0LJaJWt3-8WNSuYzxmLcET4jrCVK1RXC-7nJS"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">David Miller</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa • Death overs SR: 182.4</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">66%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.3</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">8.5</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 9: Kagiso Rabada -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="9.0" data-form="8.9" data-id="p9" data-in="true" data-name="Kagiso Rabada" data-role="BOWL" data-sel="74" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African fast bowling strike bowler in green kit with fierce expression after taking wicket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHlWDzJGkTQ3MHg_uY966RbmDTHL2PzLaf_b6MzaEnxlRpt0i4_dnd0Cgb5vylhHaEbpLyPuDWtfrMClMBErvfJXHmy9nzJqFIKEdblY4Wq5PIDpLlg-egh9iltItnWnRvjLjyPq8LxWKsJlJIYoTyXi4FYejI8J-3C142kg1uNTEMiXtqo01opYlBkqZt_jygotu5GJDpZoXefwzEZCg2NEhOQlBnyBeeh13ZZIzjAB6wsmfTETxD"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Kagiso Rabada</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BOWL</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa • Pace: 148 kph • Wkts: 13</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">74%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.9</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">9.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 10: Axar Patel -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="8.0" data-form="8.4" data-id="p10" data-in="true" data-name="Axar Patel" data-role="AR" data-sel="61" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Indian left-arm spinner and handy lower-order batsman during match celebration in blue kit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0y48rWurf5iavST5VRxQKqod5IDvQSH8hRvKS1ErZ7Cs72QW-YZwVzhD00qozKEowifvt3gSohAhRc6ZowZNmlrm2sc0IEXNyDpyawtBoTYPkfxZ_I126ppSg04i-Xt3TrQrqNmzxe8mTemj7Gm-zvg9KU3lRbWHtRM5EqOZCHbMwAWBiI_mcnqeHZLolM5VIgTz4mgRixD5T29k97m3NzAbFv8quDijlqXzc0SGDIsP8OvOCCzzP"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Axar Patel</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">AR</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • Econ: 6.2 • 92 runs</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">61%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.4</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">8.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 11: Anrich Nortje -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors" data-credits="8.0" data-form="8.6" data-id="p11" data-in="true" data-name="Anrich Nortje" data-role="BOWL" data-sel="69" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African express pace fast bowler with mustache looking energetic and focused before spell" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKQ07Ug2ZkmFZcItCmq7_uoEABzKR2TpbpFU8QEy60UJmaX9m14suSlZwK0zHHDFO2-zlTdHr8Gi9tMTKFHLEDf9sWio2BkyiENrJrsak76HxEMcMmOp7wfdi6Jtds2ZNA2UFXvsvXqTK_RRgp6e5xBxICU7wuL4BbAJr7Y9tjY_AUCoeaOKmqrKhCq_NQJn3cTnUChv_aF7_2mWnX3lKjr02_Oi5lnXn62yR8J6fRbAehFhCcZIMV"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Anrich Nortje</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BOWL</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa • Dot ball %: 58%</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">69%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.6</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">8.0</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Captain (2x)">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95" title="Make Vice-Captain (1.5x)">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 12: Arshdeep Singh (Bench/Unselected pool) -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest/60 hover:bg-surface-container-low/50 transition-colors opacity-75" data-credits="8.5" data-form="8.7" data-id="p12" data-in="false" data-name="Arshdeep Singh" data-role="BOWL" data-sel="58" data-team="IND">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="Young Indian left arm swing bowler with sports turban getting ready on the pitch during sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT88l-bEpa1evhEi1xtf9YX-xPTqm-jdjT-WMD9tVk6BzHfOUPubFbjrZpawl13qK0sQ5KkWWpLF2h45hS0RpfGMcQttKgXE9gQ7tJy-6MSy95Gqu-LJuRaA4G1hV8YSQDZaGK1y6YyRf1tldAfhiTX651yXNjoSiLX6fgWqXqfiz2lM45S6E-2WXtaStB9cJgH3MVd0JXTecBTCFui5kT7PLxsa0yK0JjqySkRTjC7rEvEUXRggZZ"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-primary text-on-primary">IND</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Arshdeep Singh</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BOWL</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">India • Wkts: 14 • Death Yorks</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">58%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">8.7</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">8.5</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50" disabled="" title="Pick into team first">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50" disabled="" title="Pick into team first">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Player 13: Aiden Markram (Bench) -->
+<div class="player-row p-space-md md:py-space-sm flex flex-col md:grid md:grid-cols-12 md:items-center gap-space-sm bg-surface-container-lowest/60 hover:bg-surface-container-low/50 transition-colors opacity-75" data-credits="8.5" data-form="7.9" data-id="p13" data-in="false" data-name="Aiden Markram" data-role="BAT" data-sel="52" data-team="SA">
+<div class="md:col-span-5 flex items-center gap-space-sm">
+<div class="relative shrink-0">
+<img class="w-10 h-10 rounded-full object-cover bg-surface-container-high" data-alt="South African captain batting in protective gear against cloudy afternoon backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIfrxqngGst0Z3VhJURUDHB3bdPHoKFn0Lb243eorNoyiqsLKFh2DZkl5hBALht1zT7Pf8cXRNLObge66zAhpUpVo_AHJJ-E-_J9GG6KNE2gOLST3tMmIpVQVbOGGTaSaN0bCJokrzp542KYGQbeBdU5H0gtKtOLO5W_AGNW6-wXwfOhbsZX6fbu3EY9wL3LTjTtMEmFL5jz64iWl87vGpBTNmixKsaW5gzQW4E3g4f4sEF0Felmcx"/>
+<span class="absolute -bottom-1 -right-1 font-label-badge text-[9px] font-bold px-1 py-0.5 rounded bg-tertiary text-on-tertiary">SA</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="player-name font-body-md text-body-md font-semibold text-on-surface truncate">Aiden Markram</span>
+<span class="font-label-badge text-label-badge px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">South Africa (C) • Part-time spin</span>
+</div>
+</div>
+<div class="flex items-center justify-between md:contents">
+<div class="md:col-span-2 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">SEL:</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface">52%</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">FORM:</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary">7.9</span>
+</div>
+<div class="md:col-span-1 md:text-center">
+<span class="md:hidden font-label-meta text-label-meta text-outline mr-2">CR:</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">8.5</span>
+</div>
+<div class="md:col-span-2 flex items-center md:justify-center gap-1.5">
+<button class="c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50" disabled="" title="Pick into team first">
+              C
+            </button>
+<button class="vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50" disabled="" title="Pick into team first">
+              VC
+            </button>
+</div>
+<div class="md:col-span-1 flex justify-end">
+<button class="toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors" title="Toggle Player">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Quick Action Drawer (Docked on Desktop, Floating on Mobile) -->
+<div class="fixed bottom-0 left-0 right-0 lg:left-60 bg-surface-container-lowest/95 backdrop-blur-xl z-40 p-space-sm px-gutter lg:px-gutter-desktop shadow-xl">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<!-- Selection summary tags -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-between sm:justify-start">
+<div class="flex items-center gap-2">
+<span class="inline-flex w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-body-md text-body-md font-bold text-on-surface" id="bottom-summary-text">
+            11/11 selected
+          </span>
+</div>
+<div class="h-4 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span>C: <strong class="text-on-surface" id="bottom-c-name">V. Kohli</strong></span>
+<span>•</span>
+<span>VC: <strong class="text-on-surface" id="bottom-vc-name">J. Bumrah</strong></span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm font-semibold text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors flex items-center gap-1" id="reset-team-btn">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset XI</span>
+</button>
+<button class="flex-1 sm:flex-none px-space-lg py-space-xs rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm font-semibold shadow-sm transition-all flex items-center justify-center gap-1.5 active:scale-98" id="save-lock-btn">
+<span>Save &amp; Lock Team</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Ergonomic Micro-Interactions Script -->
+<script>
+    (function initPavilionBuilder() {
+      const state = {
+        maxCredits: 100,
+        captainId: 'p1',
+        viceCaptainId: 'p2',
+        teamFilter: 'ALL',
+        roleFilter: 'ALL',
+        searchQuery: ''
+      };
+
+      const rows = Array.from(document.querySelectorAll('.player-row'));
+      const pickedCountEl = document.getElementById('picked-count');
+      const rosterCountText = document.getElementById('roster-count-text');
+      const creditsLeftEl = document.getElementById('credits-left');
+      const indCountEl = document.getElementById('ind-count');
+      const saCountEl = document.getElementById('sa-count');
+      const ring = document.getElementById('roster-progress-ring');
+      const hudC = document.getElementById('hud-captain');
+      const hudVC = document.getElementById('hud-vice');
+      const botC = document.getElementById('bottom-c-name');
+      const botVC = document.getElementById('bottom-vc-name');
+      const botSummary = document.getElementById('bottom-summary-text');
+      const teamInput = document.getElementById('team-name-input');
+      const saveIndicator = document.getElementById('save-indicator');
+      const searchInput = document.getElementById('player-search');
+
+      // Editable team name auto-save simulator
+      teamInput.addEventListener('input', () => {
+        saveIndicator.textContent = 'Saving...';
+        clearTimeout(window.__saveTimeout);
+        window.__saveTimeout = setTimeout(() => {
+          saveIndicator.textContent = 'Saved draft';
+        }, 600);
+      });
+
+      // Role and Team Filters
+      document.querySelectorAll('.team-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.team-filter-btn').forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+          btn.classList.remove('text-on-surface-variant');
+          state.teamFilter = btn.dataset.team;
+          applyFilters();
+        });
+      });
+
+      document.querySelectorAll('.role-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.role-filter-btn').forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary-container');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary-container');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          state.roleFilter = btn.dataset.role;
+          applyFilters();
+        });
+      });
+
+      searchInput.addEventListener('input', (e) => {
+        state.searchQuery = e.target.value.toLowerCase().trim();
+        applyFilters();
+      });
+
+      function applyFilters() {
+        rows.forEach(row => {
+          const team = row.dataset.team;
+          const role = row.dataset.role;
+          const name = row.dataset.name.toLowerCase();
+
+          const matchesTeam = (state.teamFilter === 'ALL' || team === state.teamFilter);
+          const matchesRole = (state.roleFilter === 'ALL' || role === state.roleFilter);
+          const matchesSearch = (!state.searchQuery || name.includes(state.searchQuery) || role.toLowerCase().includes(state.searchQuery));
+
+          if (matchesTeam && matchesRole && matchesSearch) {
+            row.classList.remove('hidden');
+          } else {
+            row.classList.add('hidden');
+          }
+        });
+      }
+
+      // Captain / Vice Captain logic
+      function updateMultiplierUI() {
+        rows.forEach(row => {
+          const id = row.dataset.id;
+          const isIn = row.dataset.in === 'true';
+          const cBtn = row.querySelector('.c-btn');
+          const vcBtn = row.querySelector('.vc-btn');
+
+          if (!isIn) {
+            cBtn.disabled = true;
+            vcBtn.disabled = true;
+            cBtn.className = 'c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50';
+            vcBtn.className = 'vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline cursor-not-allowed opacity-50';
+            return;
+          }
+
+          cBtn.disabled = false;
+          vcBtn.disabled = false;
+
+          // Captain styling
+          if (state.captainId === id) {
+            cBtn.className = 'c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-on-surface text-surface ring-2 ring-primary-container transition-transform active:scale-95';
+          } else {
+            cBtn.className = 'c-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95';
+          }
+
+          // Vice Captain styling
+          if (state.viceCaptainId === id) {
+            vcBtn.className = 'vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-secondary text-surface ring-2 ring-primary-container transition-transform active:scale-95';
+          } else {
+            vcBtn.className = 'vc-btn w-7 h-7 rounded-full flex items-center justify-center font-label-badge text-[10px] font-bold bg-surface-container-high text-outline hover:text-on-surface transition-transform active:scale-95';
+          }
+        });
+
+        // Top HUD & Bottom labels
+        const cRow = rows.find(r => r.dataset.id === state.captainId);
+        const vcRow = rows.find(r => r.dataset.id === state.viceCaptainId);
+
+        const cName = cRow ? formatShortName(cRow.dataset.name) : 'None';
+        const vcName = vcRow ? formatShortName(vcRow.dataset.name) : 'None';
+
+        hudC.textContent = cName;
+        hudVC.textContent = vcName;
+        botC.textContent = cName;
+        botVC.textContent = vcName;
+      }
+
+      function formatShortName(full) {
+        const parts = full.split(' ');
+        if (parts.length > 1) {
+          return parts[0][0] + '. ' + parts.slice(1).join(' ');
+        }
+        return full;
+      }
+
+      // Add/Remove roster toggle
+      rows.forEach(row => {
+        const toggleBtn = row.querySelector('.toggle-roster-btn');
+        const cBtn = row.querySelector('.c-btn');
+        const vcBtn = row.querySelector('.vc-btn');
+
+        cBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (row.dataset.in !== 'true') return;
+          const id = row.dataset.id;
+          if (state.viceCaptainId === id) state.viceCaptainId = null;
+          state.captainId = (state.captainId === id) ? null : id;
+          updateMultiplierUI();
+        });
+
+        vcBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (row.dataset.in !== 'true') return;
+          const id = row.dataset.id;
+          if (state.captainId === id) state.captainId = null;
+          state.viceCaptainId = (state.viceCaptainId === id) ? null : id;
+          updateMultiplierUI();
+        });
+
+        toggleBtn.addEventListener('click', () => {
+          const currentlyIn = row.dataset.in === 'true';
+          const currentCount = rows.filter(r => r.dataset.in === 'true').length;
+
+          if (!currentlyIn && currentCount >= 11) {
+            alert('Your XI roster is full (11/11). Remove a player first before adding another.');
+            return;
+          }
+
+          if (currentlyIn) {
+            // Remove
+            row.dataset.in = 'false';
+            row.classList.add('opacity-75');
+            toggleBtn.className = 'toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors';
+            toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">add</span>';
+            if (state.captainId === row.dataset.id) state.captainId = null;
+            if (state.viceCaptainId === row.dataset.id) state.viceCaptainId = null;
+          } else {
+            // Add
+            row.dataset.in = 'true';
+            row.classList.remove('opacity-75');
+            toggleBtn.className = 'toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary-container hover:bg-error-container hover:text-on-error-container transition-colors';
+            toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span>';
+          }
+
+          recalculateStats();
+          updateMultiplierUI();
+        });
+      });
+
+      function recalculateStats() {
+        const activeRows = rows.filter(r => r.dataset.in === 'true');
+        const count = activeRows.length;
+        
+        pickedCountEl.textContent = count;
+        rosterCountText.textContent = count;
+        botSummary.textContent = count + '/11 selected';
+
+        // Circumference = 2 * PI * 20 ≈ 125.66
+        const totalCirc = 125.66;
+        const offset = totalCirc - (count / 11) * totalCirc;
+        ring.style.strokeDashoffset = offset;
+
+        // Credits sum
+        const creditsSpent = activeRows.reduce((sum, r) => sum + parseFloat(r.dataset.credits), 0);
+        const creditsLeft = (state.maxCredits - creditsSpent).toFixed(1);
+        creditsLeftEl.textContent = creditsLeft;
+
+        // Teams count
+        const ind = activeRows.filter(r => r.dataset.team === 'IND').length;
+        const sa = activeRows.filter(r => r.dataset.team === 'SA').length;
+        indCountEl.textContent = ind + '/7';
+        saCountEl.textContent = sa + '/7';
+
+        // Roles count
+        document.getElementById('count-wk').textContent = activeRows.filter(r => r.dataset.role === 'WK').length;
+        document.getElementById('count-bat').textContent = activeRows.filter(r => r.dataset.role === 'BAT').length;
+        document.getElementById('count-ar').textContent = activeRows.filter(r => r.dataset.role === 'AR').length;
+        document.getElementById('count-bowl').textContent = activeRows.filter(r => r.dataset.role === 'BOWL').length;
+      }
+
+      // Reset Team button
+      document.getElementById('reset-team-btn').addEventListener('click', () => {
+        if (!confirm('Clear currently selected XI players?')) return;
+        rows.forEach(r => {
+          r.dataset.in = 'false';
+          r.classList.add('opacity-75');
+          const btn = r.querySelector('.toggle-roster-btn');
+          btn.className = 'toggle-roster-btn w-8 h-8 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors';
+          btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">add</span>';
+        });
+        state.captainId = null;
+        state.viceCaptainId = null;
+        recalculateStats();
+        updateMultiplierUI();
+      });
+
+      // Save & Lock button
+      document.getElementById('save-lock-btn').addEventListener('click', () => {
+        const count = rows.filter(r => r.dataset.in === 'true').length;
+        if (count !== 11) {
+          alert('You must pick exactly 11 players to finalize your squad (currently ' + count + '/11).');
+          return;
+        }
+        if (!state.captainId || !state.viceCaptainId) {
+          alert('Please select both 1 Captain (2x) and 1 Vice-Captain (1.5x) multipliers before locking.');
+          return;
+        }
+        saveIndicator.textContent = 'Locked & Synced';
+        alert('🎉 Roster "' + teamInput.value + '" locked successfully for IND vs SA T20 Final!');
+      });
+
+      // Initial execution
+      recalculateStats();
+      updateMultiplierUI();
+    })();
+  </script>
+</div></main></div><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_-1px_8px_rgba(0,0,0,0.04)] px-space-sm flex items-center justify-around" data-active-classes="text-primary-container font-semibold"><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="series" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-meta text-label-meta">Series</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="match-center" href="#"><span class="material-symbols-outlined text-[22px]">sports_cricket</span><span class="font-label-meta text-label-meta">Matches</span></a><a aria-current="page" class="flex flex-col items-center justify-center py-space-2xs px-space-sm rounded-lg relative text-primary-container font-semibold" data-path="my-teams" href="#"><span class="material-symbols-outlined text-[22px]">emoji_events</span><span class="font-label-meta text-label-meta">My Teams</span><span class="absolute top-1 right-2 w-1.5 h-1.5 rounded-full bg-primary-container"></span></a><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-[22px]">leaderboard</span><span class="font-label-meta text-label-meta">Rankings</span></a></nav></body></html>

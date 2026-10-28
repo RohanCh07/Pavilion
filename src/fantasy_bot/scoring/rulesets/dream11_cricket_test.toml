@@ -1,0 +1,49 @@
+# Cricket scoring ruleset for Test and first-class matches (Dream11 Test style).
+# All innings of a match are added together. Tests have no strike-rate or economy points.
+# Points are computed from raw scorecard stats. Check the values against the current
+# Dream11 Test rules and edit freely. See docs/SCORING.md for the format.
+
+sport = "cricket"
+name = "Dream11 Cricket (Test)"
+version = "1"
+format = "test"
+
+[appearance]
+playing_xi = 4
+
+[batting]
+run = 1
+four_bonus = 4
+six_bonus = 6
+duck = -4
+duck_exempt = ["bowler"]
+milestones_cumulative = false     # only the highest milestone reached counts
+milestones = [
+    { runs = 25, points = 4 },
+    { runs = 50, points = 8 },
+    { runs = 75, points = 12 },
+    { runs = 100, points = 16 },
+    { runs = 125, points = 20 },
+    { runs = 150, points = 24 },
+]
+
+[bowling]
+wicket = 16
+lbw_bowled_bonus = 8
+maiden = 0
+hauls_cumulative = false
+hauls = [
+    { wickets = 4, points = 4 },
+    { wickets = 5, points = 8 },
+    { wickets = 6, points = 12 },
+]
+
+[fielding]
+catch = 8
+stumping = 12
+run_out_direct = 12
+run_out_assisted = 6
+
+[multipliers]
+captain = 2.0
+vice_captain = 1.5

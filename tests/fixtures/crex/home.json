@@ -1,0 +1,873 @@
+{
+ "https://api.goscorer.com/api/v3/getLiveMatches": {
+  "10MR": {
+   "a": "SA won by an inning and 31 runs",
+   "b": "P",
+   "c": "Q",
+   "cb": "CSA",
+   "cc": "1",
+   "d": 4,
+   "dt_id": "1125900015004799",
+   "e": "2",
+   "es_id": 1,
+   "f": 8,
+   "fdst": 1792695600000,
+   "fi": "https://cricketvectors.akamaized.net/cFancode/4249782.png",
+   "fid": 4249782,
+   "finishTime": 1792677562935,
+   "fo": "Test",
+   "fs": 16,
+   "fsr": "P",
+   "fta": 300,
+   "g": "0",
+   "gc": 15,
+   "gi": 16,
+   "h": "0",
+   "hide": 0,
+   "i": 0,
+   "ifs": "C",
+   "is_promo_fan": 1,
+   "j": "!425/9(127.1",
+   "k": "99/10(42.3",
+   "l": "295/10(107.1",
+   "match_cohort": "A2",
+   "mm": "F9.P.179(334).-^-",
+   "n": 58,
+   "n1": 1,
+   "oi": "1",
+   "q": "2EW",
+   "r": "&21L3o",
+   "relevant_team_fkey": "P.Q",
+   "res": "SA won by an innings and 31 runs",
+   "s": 2,
+   "t": "TEST",
+   "ti": 1792310400000,
+   "v": "4R",
+   "wp": "P,59683,49611,86533",
+   "f_key": "10MR",
+   "session": 3,
+   "dy": 5,
+   "s1": 2,
+   "team1flag": "https://cricketvectors.akamaized.net/Teams/P.png",
+   "team2flag": "https://cricketvectors.akamaized.net/Teams/Q.png",
+   "t1cc": "#6AA164",
+   "fontFColor": "#ffffff",
+   "t2cc": "#C5C541",
+   "fontSColor": "#000000",
+   "t1Sname": "SA",
+   "t2Sname": "AUS",
+   "team1": "SA",
+   "team2": "AUS",
+   "rate_team": "SA",
+   "teamColor": "#6AA164",
+   "fontColor": "#ffffff",
+   "i1": "425/9 d",
+   "i2": "99",
+   "score1": "295/10",
+   "team1score": "295/10",
+   "over1": "107.1",
+   "t2over": "107.1",
+   "tiMs": 1792310400000,
+   "liveDays": 1,
+   "time": "08:00 AM",
+   "matchDay": "18 Oct",
+   "matchNums": "2nd",
+   "format": "Test",
+   "matchNo": "2nd-Test",
+   "sname": "AUS vs SA 2026",
+   "sfullname": "Australia tour of South Africa 2026",
+   "mTitle": "Australia tour of South Africa 2026",
+   "vname": "St George's Park, Gqeberha",
+   "t1score": "425-9 d ",
+   "t2score": "99 & 295",
+   "t1scoreDisplay": "425-9 d ",
+   "t2scoreDisplay": "99 & 295",
+   "soResult": "SA won by an inning and 31 runs",
+   "inningSActive": false,
+   "inningFActive": false,
+   "momPlayerName": "Temba Bavuma",
+   "matchTitle": "aus-vs-sa-2nd-test-australia-tour-of-south-africa-2026",
+   "mETitle": "aus vs sa 2nd test australia tour of south africa 2026",
+   "seriesTitle": "australia-tour-of-south-africa-2026"
+  },
+  "12JD": {
+   "a": "IND won by 4 wickets",
+   "b": "R",
+   "c": "O",
+   "cb": "NZC",
+   "cc": "1",
+   "d": 2,
+   "dt_id": "3377699741002338",
+   "e": "2",
+   "es_id": 1,
+   "f": 0,
+   "finishTime": 1792839875883,
+   "flb": "^O|1.01|0",
+   "fo": "T20I",
+   "fs": 22,
+   "g": 0,
+   "gc": 15,
+   "gi": 20,
+   "h": 0,
+   "hide": 0,
+   "i": "",
+   "j": "180/5(20.0",
+   "k": "181/6(19.5",
+   "match_cohort": "A2",
+   "mm": "15Q.O.51(26)*.-^-",
+   "n": 8,
+   "n1": 1,
+   "oi": "1",
+   "q": "2GR",
+   "r": "&21NGG",
+   "relevant_team_fkey": "R.O",
+   "res": "IND won by 4 wickets",
+   "t": "T20",
+   "ti": "0-5m : 0-35s",
+   "v": "6C",
+   "wp": "R,239508,671697,0",
+   "f_key": "12JD",
+   "s": 2,
+   "s1": 2,
+   "team1flag": "https://cricketvectors.akamaized.net/Teams/R.png",
+   "team2flag": "https://cricketvectors.akamaized.net/Teams/O.png",
+   "t1cc": "#474747",
+   "fontFColor": "#ffffff",
+   "t2cc": "#436CAB",
+   "fontSColor": "#ffffff",
+   "t1Sname": "NZ",
+   "t2Sname": "IND",
+   "team1": "NZ",
+   "team2": "IND",
+   "rate_team": "NZ",
+   "teamColor": "#474747",
+   "fontColor": "#ffffff",
+   "score1": "181/6",
+   "team1score": "180/5",
+   "over1": "19.5",
+   "t1over": "20.0",
+   "score2": "180/5",
+   "team2score": "181/6",
+   "over2": "20.0",
+   "t2over": "19.5",
+   "tiMs": 1792825200000,
+   "liveDays": 1,
+   "time": "Starting In",
+   "matchDay": "0-5m : 0-35s",
+   "w": "O",
+   "matchNums": "2nd",
+   "format": "T20I",
+   "matchNo": "2nd-T20I",
+   "sname": "IND vs NZ 2026",
+   "sfullname": "India tour of New Zealand 2026",
+   "mTitle": "India tour of New Zealand 2026",
+   "vname": "Hagley Oval, Christchurch",
+   "t1score": " 180-5",
+   "t2score": " 181-6",
+   "t1scoreDisplay": " 180-5",
+   "t2scoreDisplay": " 181-6",
+   "soResult": "IND won by 4 wickets",
+   "inningSActive": false,
+   "inningFActive": false,
+   "momPlayerName": "Tilak Varma",
+   "matchTitle": "ind-vs-nz-2nd-t20i-india-tour-of-new-zealand-2026",
+   "mETitle": "ind vs nz 2nd t20i india tour of new zealand 2026",
+   "seriesTitle": "india-tour-of-new-zealand-2026"
+  },
+  "13NE": {
+   "a": "&21NeS",
+   "b": "U",
+   "c": "S",
+   "cb": "PCB",
+   "cc": "1",
+   "d": 1,
+   "dt_id": "2251799918007549",
+   "e": "4",
+   "es_id": 1,
+   "f": 1,
+   "flb": "^S|1.74|1.73",
+   "fo": "ODI",
+   "fs": 20,
+   "g": 73,
+   "gc": 15,
+   "gi": 18,
+   "h": 74,
+   "hide": 0,
+   "i": 1,
+   "match_cohort": "A2",
+   "n": 1,
+   "n1": 0,
+   "oi": "1",
+   "q": "2M3",
+   "relevant_team_fkey": "U.S",
+   "t": "ODI",
+   "ti": 1792915200000,
+   "v": "29",
+   "wp": "U,16373,24165,0",
+   "f_key": "13NE",
+   "s": 0,
+   "s1": 1,
+   "team1flag": "https://cricketvectors.akamaized.net/Teams/U.png",
+   "team2flag": "https://cricketvectors.akamaized.net/Teams/S.png",
+   "t1cc": "#46857B",
+   "fontFColor": "#ffffff",
+   "t2cc": "#5D83A3",
+   "fontSColor": "#ffffff",
+   "t1Sname": "PAK",
+   "t2Sname": "ENG",
+   "team1": "Pakistan",
+   "team2": "England",
+   "rate_team": "ENG",
+   "teamColor": "#5D83A3",
+   "fontColor": "#ffffff",
+   "tiMs": 1792915200000,
+   "liveDays": 1,
+   "time": "Tomorrow",
+   "matchDay": "08:00 AM",
+   "matchNums": "4th",
+   "format": "ODI",
+   "matchNo": "4th-ODI",
+   "sname": "Tri Series in PAK 2026",
+   "sfullname": "ODI Tri Series in Pakistan 2026",
+   "mTitle": "ODI Tri Series in Pakistan 2026",
+   "vname": "Gaddafi Stadium, Lahore",
+   "t1score": " ",
+   "t2score": " ",
+   "t1scoreDisplay": " ",
+   "t2scoreDisplay": " ",
+   "soResult": "&21NeS",
+   "inningSActive": false,
+   "inningFActive": false,
+   "matchTitle": "eng-vs-pak-4th-odi-odi-tri-series-in-pakistan-2026",
+   "mETitle": "eng vs pak 4th odi odi tri series in pakistan 2026",
+   "seriesTitle": "odi-tri-series-in-pakistan-2026"
+  },
+  "14YO": {
+   "a": "DUB opt to bowl",
+   "b": "DC",
+   "c": "DE",
+   "cb": "ECB (UAE)",
+   "cc": "1",
+   "d": 1,
+   "dt_id": "0",
+   "e": "11",
+   "es_id": 1,
+   "f": 19,
+   "fi": "https://cricketvectors.akamaized.net/cFancode/4250484.png",
+   "fid": 4250484,
+   "flb": "^DC|1.96|1.9",
+   "fo": "T20",
+   "fs": 16,
+   "fsr": "P",
+   "fta": "300",
+   "g": 90,
+   "gc": 0,
+   "gi": 12,
+   "h": 96,
+   "hide": 1,
+   "i": 0,
+   "ifs": "S",
+   "is_promo_fan": 1,
+   "j": "166/4(17.5",
+   "n": 4,
+   "n1": 0,
+   "oi": "1",
+   "q": "2O6",
+   "t": "T20",
+   "ti": "0-35m : 0-35s",
+   "v": "GR",
+   "wp": "DE,9367,5758,0",
+   "f_key": "14YO",
+   "s": 1,
+   "s1": 0,
+   "team1flag": "https://cricketvectors.akamaized.net/Teams/DC.png",
+   "team2flag": "https://cricketvectors.akamaized.net/Teams/DE.png",
+   "t1cc": "#C44F51",
+   "fontFColor": "#ffffff",
+   "t2cc": "#936FB4",
+   "fontSColor": "#ffffff",
+   "t1Sname": "ABD",
+   "t2Sname": "DUB",
+   "team1": "ABD",
+   "team2": "DUB",
+   "rate_team": "ABD",
+   "teamColor": "#C44F51",
+   "fontColor": "#ffffff",
+   "t2over": "Yet to bat",
+   "over2": "Yet to bat",
+   "hBalls2": "Yet to bat",
+   "score1": "166/4",
+   "team1score": "166/4",
+   "over1": "17.5",
+   "t1over": "17.5",
+   "tiMs": 1792845000000,
+   "liveDays": 1,
+   "time": "Starting In",
+   "matchDay": "0-35m : 0-35s",
+   "matchNums": "11th",
+   "format": "T20",
+   "matchNo": "11th-T20",
+   "sname": "Emirates D20 2026",
+   "sfullname": "Emirates D20 League 2026",
+   "mTitle": "Emirates D20 League 2026",
+   "vname": "Karwan Cricket Ground, Ajman",
+   "t1score": " 166-4",
+   "t2score": " ",
+   "t1scoreDisplay": " 166-4",
+   "t2scoreDisplay": " ",
+   "soResult": "DUB opt to bowl",
+   "inningSActive": false,
+   "inningFActive": true,
+   "matchTitle": "abd-vs-dub-11th-t20-emirates-d20-league-2026",
+   "mETitle": "abd vs dub 11th t20 emirates d20 league 2026",
+   "seriesTitle": "emirates-d20-league-2026"
+  }
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapDatahome": {
+  "p": [
+   {
+    "f_key": "EQX",
+    "n": "Pratika Rawal"
+   },
+   {
+    "f_key": "F9",
+    "n": "Temba Bavuma"
+   },
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "4V8",
+    "n": "Mitchell Perry"
+   },
+   {
+    "f_key": "C7V",
+    "n": "Sam Konstas"
+   },
+   {
+    "f_key": "6UY",
+    "n": "Pavan Rathnayake"
+   },
+   {
+    "f_key": "10Q",
+    "n": "Ibrahim Zadran"
+   },
+   {
+    "f_key": "QHE",
+    "n": "Taher Sarwary"
+   },
+   {
+    "f_key": "68O",
+    "n": "Riazat Ali Shah"
+   },
+   {
+    "f_key": "AAD",
+    "n": "Lahiru Sandaruwan"
+   },
+   {
+    "f_key": "NUD",
+    "n": "Ahmad Ali Khilji"
+   },
+   {
+    "f_key": "20U",
+    "n": "Hamza Tariq"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "6I",
+    "n": "Zimbabwe Women",
+    "sn": "ZIM-W",
+    "cc": "0-#ED3833",
+    "uc": "#972138",
+    "dc": "#A80020"
+   },
+   {
+    "f_key": "16",
+    "n": "India Women",
+    "sn": "IND-W",
+    "cc": "0-#2174F6",
+    "uc": "#4479CA",
+    "dc": "#1C3E73"
+   },
+   {
+    "f_key": "P",
+    "n": "South Africa",
+    "sn": "SA",
+    "cc": "0-#6AA164",
+    "uc": "#30AF6A",
+    "dc": "#156C3D"
+   },
+   {
+    "f_key": "Q",
+    "n": "Australia",
+    "sn": "AUS",
+    "cc": "1-#C5C541",
+    "uc": "#35A552",
+    "dc": "#0D5F23"
+   },
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   },
+   {
+    "f_key": "3J",
+    "n": "Victoria",
+    "sn": "VIC",
+    "cc": "0-#273D6D",
+    "uc": "#2B4980",
+    "dc": "#1D2643"
+   },
+   {
+    "f_key": "FV",
+    "n": "Tasmania",
+    "sn": "TAS",
+    "cc": "0-#6E3022",
+    "uc": "#1A3E36",
+    "dc": "#CC200C"
+   },
+   {
+    "f_key": "3L",
+    "n": "New South Wales",
+    "sn": "NSW",
+    "cc": "1-#3B678B",
+    "uc": "#5C9AC6",
+    "dc": "#0E223A"
+   },
+   {
+    "f_key": "3K",
+    "n": "Western Australia",
+    "sn": "WACA",
+    "cc": "0-#928501",
+    "uc": "#F9E501",
+    "dc": "#110B03"
+   },
+   {
+    "f_key": "S",
+    "n": "England",
+    "sn": "ENG",
+    "cc": "0-#5D83A3",
+    "uc": "#4662AC",
+    "dc": "#213365"
+   },
+   {
+    "f_key": "T",
+    "n": "Sri Lanka",
+    "sn": "SL",
+    "cc": "0-#2B437F",
+    "uc": "#3B5FB9",
+    "dc": "#213C7F"
+   },
+   {
+    "f_key": "U",
+    "n": "Pakistan",
+    "sn": "PAK",
+    "cc": "0-#46857B",
+    "uc": "#01984B",
+    "dc": "#01572B"
+   },
+   {
+    "f_key": "6S",
+    "n": "India A",
+    "sn": "IND-A",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   },
+   {
+    "f_key": "M1",
+    "n": "New Zealand A",
+    "sn": "NZ-A",
+    "cc": "0-#6488F1",
+    "uc": "#C6112F",
+    "dc": "#092167"
+   },
+   {
+    "f_key": "X",
+    "n": "Zimbabwe",
+    "sn": "ZIM",
+    "cc": "0-#A50726",
+    "uc": "#A50726",
+    "dc": "#9A1D35"
+   },
+   {
+    "f_key": "Y",
+    "n": "Afghanistan",
+    "sn": "AFG",
+    "cc": "0-#0D287B",
+    "uc": "#5C99EA",
+    "dc": "#375D8F"
+   },
+   {
+    "f_key": "6C",
+    "n": "Warriors",
+    "sn": "WAR",
+    "cc": "0-#636A72",
+    "uc": "#BDF412",
+    "dc": "#8F020A"
+   },
+   {
+    "f_key": "JC",
+    "n": "Eastern Cape Iinyathi",
+    "sn": "ECI",
+    "cc": "0-#69B5D3",
+    "uc": "#F8D295",
+    "dc": "#A40106"
+   },
+   {
+    "f_key": "JD",
+    "n": "Limpopo Impalas",
+    "sn": "LMP",
+    "cc": "0-#403F45",
+    "uc": "#FF8300",
+    "dc": "#FB111C"
+   },
+   {
+    "f_key": "6D",
+    "n": "Lions",
+    "sn": "LIO",
+    "cc": "1-#1F2C65",
+    "uc": "#FBCA01",
+    "dc": "#01143F"
+   },
+   {
+    "f_key": "6E",
+    "n": "Knights",
+    "sn": "KNG",
+    "cc": "0-#EE9552",
+    "uc": "#E97A42",
+    "dc": "#2B2D3C"
+   },
+   {
+    "f_key": "JA",
+    "n": "Mpumalanga Rhinos",
+    "sn": "RNO",
+    "cc": "0-#54DDC3",
+    "uc": "#25BCA0",
+    "dc": "#0F2D35"
+   },
+   {
+    "f_key": "6X",
+    "n": "Namibia",
+    "sn": "NAM",
+    "cc": "0-#2778A9",
+    "uc": "#1DABF3",
+    "dc": "#353547"
+   },
+   {
+    "f_key": "Z",
+    "n": "Ireland",
+    "sn": "IRE",
+    "cc": "0-#2C7728",
+    "uc": "#2EA128",
+    "dc": "#2C7728"
+   },
+   {
+    "f_key": "8J",
+    "n": "Bangladesh U19",
+    "sn": "BAN U19",
+    "cc": "0-#2B6515",
+    "uc": "#B75A0E",
+    "dc": "#044A2D"
+   },
+   {
+    "f_key": "8E",
+    "n": "Afghanistan U19",
+    "sn": "AFG U19",
+    "cc": "0-#0D287B",
+    "uc": "#5C99EA",
+    "dc": "#375D8F"
+   },
+   {
+    "f_key": "CB",
+    "n": "Qatar",
+    "sn": "QAT",
+    "cc": "0-#BE8999",
+    "uc": "#EAE6E8",
+    "dc": "#902042"
+   },
+   {
+    "f_key": "6V",
+    "n": "Kenya",
+    "sn": "KEN",
+    "cc": "0-#2B6515",
+    "uc": "#B3B3B3",
+    "dc": "#5E5E5E"
+   },
+   {
+    "f_key": "1LO",
+    "n": "Gambia",
+    "sn": "GAM",
+    "cc": "0-#F26473",
+    "uc": "#3A7728",
+    "dc": "#CE1126"
+   },
+   {
+    "f_key": "HO",
+    "n": "Uganda",
+    "sn": "UGN",
+    "cc": "0-#D3C162",
+    "uc": "#D3C162",
+    "dc": "#A44431"
+   },
+   {
+    "f_key": "DF",
+    "n": "Ajman",
+    "sn": "AJT",
+    "cc": "0-#892C70",
+    "uc": "#C13E9D",
+    "dc": "#3B132F"
+   },
+   {
+    "f_key": "DG",
+    "n": "Sharjah",
+    "sn": "SHA",
+    "cc": "0-#B58073",
+    "uc": "#F47823",
+    "dc": "#203E8F"
+   },
+   {
+    "f_key": "DC",
+    "n": "Abu Dhabi",
+    "sn": "ABD",
+    "cc": "0-#C44F51",
+    "uc": "#BF3738",
+    "dc": "#171516"
+   },
+   {
+    "f_key": "DD",
+    "n": "Emirates Blues",
+    "sn": "EMB",
+    "cc": "0-#807FD4",
+    "uc": "#D9D9FC",
+    "dc": "#07069D"
+   },
+   {
+    "f_key": "DE",
+    "n": "Dubai",
+    "sn": "DUB",
+    "cc": "0-#936FB4",
+    "uc": "#BD4591",
+    "dc": "#1961A9"
+   },
+   {
+    "f_key": "R1",
+    "n": "Emirates Red",
+    "sn": "EMR",
+    "cc": "0-#B5747A",
+    "uc": "#C1BDBE",
+    "dc": "#A81E2C"
+   },
+   {
+    "f_key": "2I",
+    "n": "Toronto Kings",
+    "sn": "TK",
+    "cc": "0-#F7B34A",
+    "uc": "#FBD538",
+    "dc": "#563502"
+   },
+   {
+    "f_key": "6P",
+    "n": "Brampton Blazers",
+    "sn": "BB",
+    "cc": "0-#C19967",
+    "uc": "#FEDB84",
+    "dc": "#2D2112"
+   },
+   {
+    "f_key": "RC",
+    "n": "Mississauga Skyhawks",
+    "sn": "MS",
+    "cc": "0-#1F87FF",
+    "uc": "#FFC300",
+    "dc": "#002754"
+   },
+   {
+    "f_key": "2K",
+    "n": "Montreal Warriors",
+    "sn": "MW",
+    "cc": "0-#459DF9",
+    "uc": "#7FD0FA",
+    "dc": "#025FC0"
+   }
+  ],
+  "v": [
+   {
+    "f_key": "A3",
+    "n": "Kotambi Stadium, Vadodara"
+   },
+   {
+    "f_key": "4R",
+    "n": "St George's Park, Gqeberha"
+   },
+   {
+    "f_key": "4D",
+    "n": "Newlands, Cape Town"
+   },
+   {
+    "f_key": "6C",
+    "n": "Hagley Oval, Christchurch"
+   },
+   {
+    "f_key": "6D",
+    "n": "Bellerive Oval, Hobart"
+   },
+   {
+    "f_key": "6Q",
+    "n": "Western Australia Cricket Association Ground, Perth"
+   },
+   {
+    "f_key": "24",
+    "n": "Rawalpindi Cricket Stadium, Rawalpindi"
+   },
+   {
+    "f_key": "29",
+    "n": "Gaddafi Stadium, Lahore"
+   },
+   {
+    "f_key": "BH",
+    "n": "Bert Sutcliffe Oval"
+   },
+   {
+    "f_key": "6U",
+    "n": "Sharjah Cricket Stadium, Sharjah"
+   },
+   {
+    "f_key": "4F",
+    "n": "Buffalo Park, KuGumpo City"
+   },
+   {
+    "f_key": "4U",
+    "n": "The Wanderers Stadium, Johannesburg"
+   },
+   {
+    "f_key": "4M",
+    "n": "Mangaung Oval, Bloemfontein"
+   },
+   {
+    "f_key": "JL",
+    "n": "Namibia Cricket Ground, Windhoek"
+   },
+   {
+    "f_key": "BQ",
+    "n": "Al Amerat Cricket Ground (Ministry Turf 2)"
+   },
+   {
+    "f_key": "3G",
+    "n": "Ruaraka Sports Club Ground, Nairobi Kenya"
+   },
+   {
+    "f_key": "P3",
+    "n": "Nigeria Cricket Federation Oval 2, Abuja"
+   },
+   {
+    "f_key": "GR",
+    "n": "Karwan Cricket Ground, Ajman"
+   },
+   {
+    "f_key": "38",
+    "n": "Arnos Vale Stadium, Kingstown, St Vincent "
+   }
+  ],
+  "s": [
+   {
+    "f_key": "2I5",
+    "n": "Zimbabwe Women tour of India 2026",
+    "sn": "ZIM-W vs IND-W 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2EW",
+    "n": "Australia tour of South Africa 2026",
+    "sn": "AUS vs SA 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2KN",
+    "n": "Australia Domestic One-Day Cup 2026-27",
+    "sn": "AUS One Day Cup 2026-27",
+    "tour": 0
+   },
+   {
+    "f_key": "2M3",
+    "n": "ODI Tri Series in Pakistan 2026",
+    "sn": "Tri Series in PAK 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2MF",
+    "n": "India A tour of New Zealand 2026",
+    "sn": "IND-A vs NZ-A 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2MN",
+    "n": "ODI Tri-Nation Series in UAE 2026",
+    "sn": "Tri Series in UAE 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2MT",
+    "n": "CSA Pro T20 Cup 2026",
+    "sn": "CSA T20 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2NU",
+    "n": "Ireland tour of Namibia 2026",
+    "sn": "IRE vs NAM 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "2NV",
+    "n": "Afghanistan U19 vs Bangladesh U19 in Oman 2026",
+    "sn": "AFG-U19 vs BAN-U19 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1WE",
+    "n": "Men's CWC Challenge League A 2024-26",
+    "sn": "CWC League A 2024-26",
+    "tour": 0
+   },
+   {
+    "f_key": "2O4",
+    "n": "Men's T20 World Cup Africa Sub Regional Qualifier C 2026",
+    "sn": "Men's T20 WC Africa Q-C 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2O6",
+    "n": "Emirates D20 League 2026",
+    "sn": "Emirates D20 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2O5",
+    "n": "Global T20 Canada 2026",
+    "sn": "Global T20 2026",
+    "tour": 0
+   }
+  ],
+  "u": []
+ }
+}

@@ -1,0 +1,33 @@
+# Football scoring ruleset.
+# Values carried over from the original bot's config (D:\Projects\BOT\config.py).
+# Edit freely; see docs/SCORING.md for the format.
+
+name = "Dream11 Football"
+version = "1"
+
+[appearance]
+starting_xi = 4
+substitute = 2
+
+# Points per occurrence. Use "default" for every position, or name positions to override.
+[per_event]
+goals = { goalkeeper = 12, defender = 10, midfielder = 8, forward = 6 }
+assists = { default = 8 }
+saves = { goalkeeper = 2 }
+penalties_saved = { goalkeeper = 12 }
+penalties_missed = { default = -4 }
+own_goals = { default = -6 }
+yellow_cards = { default = -2 }
+red_cards = { default = -4 }
+
+[clean_sheet]
+min_minutes = 60
+points = { goalkeeper = 12, defender = 8, midfielder = 4 }
+
+[cards]
+# A red card cancels the yellow shown in the same match.
+red_replaces_yellow = true
+
+[multipliers]
+captain = 2.0
+vice_captain = 1.5

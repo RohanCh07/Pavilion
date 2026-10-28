@@ -1,0 +1,474 @@
+{
+ "https://api.goscorer.com/api/v3/getIV4?key=12JD": {
+  "avf": {
+   "100B": "0",
+   "odi": "1",
+   "t10": "0",
+   "t20": "1",
+   "test": "1"
+  },
+  "b": "Sony Sports TEN Network, Sony LIV, DD Sports",
+  "bs": {
+   "f": 75,
+   "s": 32
+  },
+  "dt": "2026-10-24T12:30:00.000Z",
+  "fo": "T20I",
+  "hth": "R:2-O:8",
+  "lt": "2026-10-24T20:00:00.000+13:00",
+  "m": "2/2",
+  "ptt": "O^1^1^0^+0.445^0^2^5^1|R^1^0^1^-0.445^0^0^5^2",
+  "ro": [
+   "CM"
+  ],
+  "s": "2GR",
+  "sb": "",
+  "ss": {
+   "O": [
+    {
+     "pfkey": "2A",
+     "title": "Head Coach"
+    },
+    {
+     "pfkey": "Q2Q",
+     "title": "Batting Coach"
+    },
+    {
+     "pfkey": "4N",
+     "title": "Bowling Coach"
+    },
+    {
+     "pfkey": "Q4M",
+     "title": "Fielding Coach"
+    }
+   ],
+   "R": [
+    {
+     "pfkey": "QAM",
+     "title": "Head Coach"
+    },
+    {
+     "pfkey": "MN",
+     "title": "Batting Coach"
+    },
+    {
+     "pfkey": "7X",
+     "title": "Bowling Coach"
+    },
+    {
+     "pfkey": "2AB",
+     "title": "Fielding Coach"
+    }
+   ]
+  },
+  "st": "1",
+  "t": "R-O",
+  "t1f": "164/5^20.0-145/10^18.5-4&2&VAW&1VM&P&R&1125899985001479|187/4^20.0-154/8^20.0-5&2&VAX&1VM&P&R&1125899985001479|182/6^20.0-183/4^18.0-1&2&10Z3&299&R&W&2251799896003200|102/10^14.2-104/4^11.4-3&2&10Z5&299&W&R&2251799896003200|225/4^20.0-230/6^19.4-1&2&12JC&2GR&R&O&3377699741002338",
+  "t2f": "171/10^19.1-172/2^14.4-1&2&11AL&2FZ&V&O&1125899989000030|249/5^20.0-252/4^18.3-2&2&11AM&2FZ&O&V&1125899989000030|223/10^20.0-209/7^20.0-3&2&11AN&2FZ&O&V&1125899989000030|247/3^20.0-223/10^19.3-4&2&11AO&2FZ&V&O&1125899989000030|225/4^20.0-230/6^19.4-1&2&12JC&2GR&R&O&3377699741002338",
+  "tb": "4W1.69.1.1.0.0.0.0.2-5EX.13.3.1.0.0.0.0.3-13F.32.2.1.0.0.0.0.5-8B.57.2.1.0.0.1.0.5-M2.18.2.1.0.0.0.0.5/177..1.1.0.0.0.0.1-CM.67.1.1.0.0.1.0.2-EJ.82.3.1.0.0.0.0.3-EK.49.2.1.0.0.0.0.4-75.56.2.1.0.0.0.0.4-7RU.11.2.1.0.0.1.0.5",
+  "tf": "L3W1L1-W1L1W1L1W1",
+  "tp": "4W4.63.1.1.0.0.1.1.1.0-JX.91.1.1.0.0.1.1.1.0-K5.105.3.1.0.0.1.3.3.0-MP.98.3.1.0.0.1.3.3.0-CZY.12.1.1.0.0.1.1.1.0-4W5.48.3.1.0.0.1.3.3.0-BR.139.3.1.0.0.1.3.3.0-4X2.3.3.1.0.0.1.3.3.0-AS.44.2.1.0.0.1.5.5.0-4X4.48.2.1.0.0.0.5.5.0-DC.55.2.1.0.0.1.5.5.0/72.78.1.1.0.0.1.1.1.0-1DH.68.3.1.0.0.1.3.3.0-DBT.8.1.1.0.0.0.2.2.0-B1.73.1.1.0.0.1.1.1.0-15Q.71.3.1.0.0.1.3.3.0-7OV.10.3.1.0.0.1.3.3.0-AXL.6.1.1.0.0.1.1.1.0-A9.113.3.1.0.0.1.3.3.0-36.89.2.1.0.0.1.5.5.0-E5.100.2.1.0.0.1.5.5.0-DCZ.9.2.1.0.0.0.5.5.0",
+  "tti": 0,
+  "u": "1V/W/B9/38",
+  "v": "6C",
+  "va": {
+   "6": "49-54",
+   "10": "78-83",
+   "15": "118-115",
+   "20": "166-148",
+   "d": "10"
+  },
+  "vsp": {
+   "a1": "165",
+   "a2": "149",
+   "h": "236-4 (20 Ov) by ENG vs NZ",
+   "hc": "230-6 (19.4 Ov) by IND vs NZ",
+   "hcm": "12JC/49944/&21MVo/2GR/27/24/R/O/2/2/1/24/1/1/3377699741002338",
+   "hm": "VB2/40574/&1z91D/1VO/27/28/R/S/2/2/1/27/1/2/2251799842002082",
+   "l": "91-10 (18.4 Ov) by PAK vs NZ",
+   "ld": "184-5 (20 Ov) by NZ vs AUS",
+   "ldm": "7W5/10229/&1orns/IX/26/27/Q/R/2/2/1/26/1/1/0",
+   "lm": "QEN/34223/&1xpH9/1N0/27/30/R/U/2/2/1/27/1/1/0",
+   "t": "Men's T20",
+   "tm": "16",
+   "x": "8",
+   "y": "8"
+  },
+  "wU": {
+   "crT": "16.4˚C",
+   "hum": "40",
+   "mnT": "8.3˚C",
+   "mxT": "25.6˚C",
+   "rP": "13 %",
+   "t": "&21NJp",
+   "wC": "Clear",
+   "wIc": "1",
+   "wS": "Windspeed: 13 km/h"
+  },
+  "x": "BR/JX/B1/72",
+  "y": "4"
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapDataliveparsing": {
+  "p": [
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "7OV",
+    "n": "Nitish Kumar Reddy"
+   },
+   {
+    "f_key": "4X4",
+    "n": "Jacob Duffy"
+   },
+   {
+    "f_key": "AXL",
+    "n": "Naman Dhir"
+   },
+   {
+    "f_key": "2",
+    "n": "Ganapathi Vignesh"
+   },
+   {
+    "f_key": "4X2",
+    "n": "Nathan Smith"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   }
+  ],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   }
+  ],
+  "u": []
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapDatamatchinfo": {
+  "p": [
+   {
+    "f_key": "4W4",
+    "n": "Finn Allen"
+   },
+   {
+    "f_key": "JX",
+    "n": "Tim Seifert"
+   },
+   {
+    "f_key": "K5",
+    "n": "Daryl Mitchell"
+   },
+   {
+    "f_key": "MP",
+    "n": "Glenn Phillips"
+   },
+   {
+    "f_key": "CZY",
+    "n": "Bevon-John Jacobs"
+   },
+   {
+    "f_key": "4W5",
+    "n": "Michael Bracewell"
+   },
+   {
+    "f_key": "BR",
+    "n": "Mitchell Santner"
+   },
+   {
+    "f_key": "4X2",
+    "n": "Nathan Smith"
+   },
+   {
+    "f_key": "AS",
+    "n": "Matt Henry"
+   },
+   {
+    "f_key": "4X4",
+    "n": "Jacob Duffy"
+   },
+   {
+    "f_key": "DC",
+    "n": "Lockie Ferguson"
+   },
+   {
+    "f_key": "72",
+    "n": "Sanju Samson"
+   },
+   {
+    "f_key": "1DH",
+    "n": "Abhishek Sharma"
+   },
+   {
+    "f_key": "DBT",
+    "n": "Vaibhav Sooryavanshi"
+   },
+   {
+    "f_key": "B1",
+    "n": "Shreyas Iyer"
+   },
+   {
+    "f_key": "15Q",
+    "n": "Tilak Varma"
+   },
+   {
+    "f_key": "7OV",
+    "n": "Nitish Kumar Reddy"
+   },
+   {
+    "f_key": "AXL",
+    "n": "Naman Dhir"
+   },
+   {
+    "f_key": "A9",
+    "n": "Axar Patel"
+   },
+   {
+    "f_key": "36",
+    "n": "Bhuvneshwar Kumar"
+   },
+   {
+    "f_key": "E5",
+    "n": "Arshdeep Singh"
+   },
+   {
+    "f_key": "DCZ",
+    "n": "Prince Yadav"
+   },
+   {
+    "f_key": "4W1",
+    "n": "Devon Conway"
+   },
+   {
+    "f_key": "5EX",
+    "n": "Josh Clarkson"
+   },
+   {
+    "f_key": "13F",
+    "n": "Kyle Jamieson"
+   },
+   {
+    "f_key": "8B",
+    "n": "Adam Milne"
+   },
+   {
+    "f_key": "M2",
+    "n": "Blair Tickner"
+   },
+   {
+    "f_key": "177",
+    "n": "Kumar Kushagra"
+   },
+   {
+    "f_key": "CM",
+    "n": "Ishan Kishan"
+   },
+   {
+    "f_key": "EJ",
+    "n": "Shivam Dube"
+   },
+   {
+    "f_key": "EK",
+    "n": "Varun Chakaravarthy"
+   },
+   {
+    "f_key": "75",
+    "n": "Kuldeep Yadav"
+   },
+   {
+    "f_key": "7RU",
+    "n": "Mayank Yadav"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   },
+   {
+    "f_key": "P",
+    "n": "South Africa",
+    "sn": "SA",
+    "cc": "0-#6AA164",
+    "uc": "#30AF6A",
+    "dc": "#156C3D"
+   },
+   {
+    "f_key": "W",
+    "n": "Bangladesh",
+    "sn": "BAN",
+    "cc": "0-#6E8047",
+    "uc": "#B75A0E",
+    "dc": "#3E4D1C"
+   },
+   {
+    "f_key": "V",
+    "n": "West Indies",
+    "sn": "WI",
+    "cc": "0-#763449",
+    "uc": "#A01D48",
+    "dc": "#761031"
+   }
+  ],
+  "v": [
+   {
+    "f_key": "6C",
+    "n": "Hagley Oval, Christchurch"
+   }
+  ],
+  "s": [
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1VM",
+    "n": "South Africa tour of New Zealand 2026",
+    "sn": "SA vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "299",
+    "n": "New Zealand tour of Bangladesh 2026",
+    "sn": "NZ vs BAN 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "2FZ",
+    "n": "West Indies tour of India 2026",
+    "sn": "WI vs IND 2026",
+    "tour": 1
+   }
+  ],
+  "u": [
+   {
+    "f_key": "1V",
+    "n": "Shaun Haig"
+   },
+   {
+    "f_key": "W",
+    "n": "Kim Cotton"
+   },
+   {
+    "f_key": "B9",
+    "n": "Cory Black"
+   },
+   {
+    "f_key": "38",
+    "n": "Ranjan Madugalle"
+   }
+  ]
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapDatainfoprelive": {
+  "p": [],
+  "t": [
+   {
+    "f_key": "R",
+    "n": "New Zealand",
+    "sn": "NZ",
+    "cc": "0-#474747",
+    "uc": "#565757",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "O",
+    "n": "India",
+    "sn": "IND",
+    "cc": "0-#436CAB",
+    "uc": "#3F71BE",
+    "dc": "#254B85"
+   },
+   {
+    "f_key": "P",
+    "n": "South Africa",
+    "sn": "SA",
+    "cc": "0-#6AA164",
+    "uc": "#30AF6A",
+    "dc": "#156C3D"
+   },
+   {
+    "f_key": "1H",
+    "n": "New Zealand Women",
+    "sn": "NZ-W",
+    "cc": "0-#474747",
+    "uc": "#5E5F60",
+    "dc": "#2E2E2E"
+   },
+   {
+    "f_key": "17",
+    "n": "South Africa Women",
+    "sn": "SA-W",
+    "cc": "0-#2B6515",
+    "uc": "#36BD74",
+    "dc": "#0C562E"
+   }
+  ],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2GR",
+    "n": "India tour of New Zealand 2026",
+    "sn": "IND vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1UY",
+    "n": "T20 World Cup 2026",
+    "sn": "T20 WC 2026",
+    "tour": 0
+   },
+   {
+    "f_key": "1V1",
+    "n": "New Zealand tour of India 2026",
+    "sn": "NZ vs IND 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1VM",
+    "n": "South Africa tour of New Zealand 2026",
+    "sn": "SA vs NZ 2026",
+    "tour": 1
+   },
+   {
+    "f_key": "1VR",
+    "n": "South Africa Women tour of New Zealand 2026",
+    "sn": "SAW vs NZW 2026",
+    "tour": 1
+   }
+  ],
+  "u": []
+ }
+}

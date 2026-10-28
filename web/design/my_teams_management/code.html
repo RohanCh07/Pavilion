@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#2a1700",
+          "surface-container-highest": "#d3e4fe",
+          "on-tertiary": "#ffffff",
+          "surface-variant": "#d3e4fe",
+          "primary-fixed": "#6ffbbe",
+          "primary": "#006c49",
+          "primary-fixed-dim": "#4edea3",
+          "outline": "#6c7a71",
+          "outline-variant": "#bbcabf",
+          "tertiary-fixed-dim": "#ffb95f",
+          "tertiary-fixed": "#ffddb8",
+          "on-surface": "#0b1c30",
+          "surface-container-low": "#eff4ff",
+          "on-background": "#0b1c30",
+          "secondary-fixed": "#dae2fd",
+          "on-secondary-fixed-variant": "#3f465c",
+          "on-surface-variant": "#3c4a42",
+          "secondary-fixed-dim": "#bec6e0",
+          "on-primary-container": "#00422b",
+          "secondary": "#565e74",
+          "background": "#f8f9ff",
+          "primary-container": "#10b981",
+          "on-secondary": "#ffffff",
+          "on-primary": "#ffffff",
+          "surface-container": "#e5eeff",
+          "on-error-container": "#93000a",
+          "secondary-container": "#dae2fd",
+          "error": "#ba1a1a",
+          "surface-bright": "#f8f9ff",
+          "on-primary-fixed-variant": "#005236",
+          "surface": "#f8f9ff",
+          "inverse-surface": "#213145",
+          "tertiary-container": "#e29100",
+          "on-primary-fixed": "#002113",
+          "surface-container-high": "#dce9ff",
+          "tertiary": "#855300",
+          "on-tertiary-container": "#523200",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-fixed-variant": "#653e00",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#131b2e",
+          "surface-dim": "#cbdbf5",
+          "inverse-on-surface": "#eaf1ff",
+          "on-secondary-container": "#5c647a",
+          "surface-tint": "#006c49",
+          "inverse-primary": "#4edea3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-2xl": "2rem",
+          "space-md": "0.75rem",
+          "space-2xs": "0.125rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "gutter-desktop": "1.5rem",
+          "margin": "1rem",
+          "space-xl": "1.5rem",
+          "margin-tablet": "1.5rem",
+          "space-lg": "1rem",
+          "margin-desktop": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Geist"
+          ],
+          "headline-lg-mobile": [
+            "Geist"
+          ],
+          "body-md": [
+            "Geist"
+          ],
+          "label-meta": [
+            "Geist"
+          ],
+          "label-numeric": [
+            "JetBrains Mono"
+          ],
+          "headline-xl": [
+            "Geist"
+          ],
+          "headline-md": [
+            "Geist"
+          ],
+          "body-sm": [
+            "Geist"
+          ],
+          "label-badge": [
+            "Geist"
+          ],
+          "body-lg": [
+            "Geist"
+          ],
+          "headline-lg": [
+            "Geist"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-meta": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "label-numeric": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-badge": [
+            "11px",
+            {
+              "lineHeight": "12px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="hidden lg:flex fixed left-0 top-0 h-screen w-60 bg-surface-container-lowest flex-col justify-between z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Pavilion Fantasy Cricket Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XUcGAA2mQ5PNFLKrikL5fErY8nsYSMdrv9ECB-96hzfwYeOMiT89SROZkiwK3VijXGpwqsZ_DY5ZauribH-j8Z_pCbekKQSzddePnT0sc0EFzZ18xc7FV3REqzQ-WvuItrjcyKrlWHWgytXJ-9LRLxM-IKCcU6-zdC2Ug3lZBhtl3Ztbp_68qG-_EkccZE0LYXzl3s-6acwusR35rv0Hzts2pHvBljnz82xYJsuhyCcJb8vIAUkyVhWRY"/><span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Pavilion</span></div><span class="px-space-xs py-space-2xs rounded bg-surface-container-low text-primary font-label-badge text-label-badge uppercase tracking-wider font-bold">PRO</span></div><div class="px-space-lg py-space-xs"><p class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-semibold mb-space-xs">Navigation</p></div><nav class="flex flex-col gap-space-2xs px-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="series" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">home</span><span>Series</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-semibold" data-path="my-teams" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">emoji_events</span><span>My Teams</span></div><span class="px-space-xs py-space-2xs rounded-full bg-secondary-container text-on-secondary-container font-label-numeric text-label-numeric font-medium">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="match-center" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Match Center</span></div><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="leaderboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">leaderboard</span><span>Leaderboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="rules-scoring" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Rules &amp; Scoring</span></div></a></nav></div><div class="flex flex-col p-space-sm gap-space-xs bg-surface-container-low/50 rounded-xl m-space-sm"><div class="flex items-center justify-between px-space-sm py-space-2xs"><div class="flex items-center gap-space-2xs text-outline font-label-meta text-label-meta"><span class="h-1.5 w-1.5 rounded-full bg-primary-container"></span><span>Syncing fast · 12ms</span></div><button aria-label="Theme Toggle" class="text-on-surface-variant hover:text-on-surface p-space-2xs" type="button"><span class="material-symbols-outlined text-[16px]">light_mode</span></button></div><div class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg hover:bg-surface-container-lowest transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwrvk7DDbcIi9Js7G_icjsfHY7WlQfUzCv9jOtQOodwdUbYrVzBpY3iWm538pJNjxkkBnPQb2nJHApo-ydzaknNqROiAYcA9yA2VtpdApOzzL8zTY7T_Q7rA3sh-2CXsmEAHfUZ9GZf7gXzM3Q-L6A_56KPdFO3uxeN562_gR-D_HmQmxq00VCRHVxXZ1R13wC4uWvco60CcUkMN9JXG9rlilioUpErpmnxt4-y89S_X1J9_fZjMGg"/><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Alex Sharma</span><span class="font-label-numeric text-label-numeric text-outline">1,420 pts overall</span></div><span class="material-symbols-outlined text-[18px] text-outline">unfold_more</span></div></div></aside><div class="lg:pl-60 flex flex-col min-h-screen"><header class="fixed top-0 right-0 left-0 lg:left-60 h-16 bg-surface-container-lowest/85 backdrop-blur-xl z-30 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-gutter lg:px-gutter-desktop"><div class="h-16 w-full flex items-center justify-between gap-space-md"><div class="flex lg:hidden items-center gap-space-sm"><img alt="Pavilion Fantasy Cricket Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XUcGAA2mQ5PNFLKrikL5fErY8nsYSMdrv9ECB-96hzfwYeOMiT89SROZkiwK3VijXGpwqsZ_DY5ZauribH-j8Z_pCbekKQSzddePnT0sc0EFzZ18xc7FV3REqzQ-WvuItrjcyKrlWHWgytXJ-9LRLxM-IKCcU6-zdC2Ug3lZBhtl3Ztbp_68qG-_EkccZE0LYXzl3s-6acwusR35rv0Hzts2pHvBljnz82xYJsuhyCcJb8vIAUkyVhWRY"/><span class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface tracking-tight">Pavilion</span><span class="px-space-xs py-space-2xs rounded bg-surface-container-low text-primary font-label-badge text-label-badge font-bold">LIVE</span></div><div class="hidden md:flex items-center flex-1 max-w-md"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">search</span><input class="w-full pl-9 pr-4 py-space-xs bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search series, matches, players..." type="text"/></div></div><div class="flex items-center gap-space-sm"><button class="hidden sm:inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors hover:text-on-primary" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Team</span></button><button aria-label="Notifications" class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-error"></span></button><div class="flex lg:hidden items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwrvk7DDbcIi9Js7G_icjsfHY7WlQfUzCv9jOtQOodwdUbYrVzBpY3iWm538pJNjxkkBnPQb2nJHApo-ydzaknNqROiAYcA9yA2VtpdApOzzL8zTY7T_Q7rA3sh-2CXsmEAHfUZ9GZf7gXzM3Q-L6A_56KPdFO3uxeN562_gR-D_HmQmxq00VCRHVxXZ1R13wC4uWvco60CcUkMN9JXG9rlilioUpErpmnxt4-y89S_X1J9_fZjMGg"/></div></div></div></header><main class="w-full pt-16 pb-20 lg:pb-space-xl bg-surface px-gutter lg:px-gutter-desktop"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline mb-space-2xs">
+<span class="font-label-meta text-label-meta uppercase tracking-wider font-semibold">Pavilion Squad Vault</span>
+<span class="font-label-meta text-label-meta">•</span>
+<span class="font-label-numeric text-label-numeric text-primary font-medium">Synced 4s ago</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">My Fantasy Teams</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-2xs">
+        Manage active tournament squads, track real-time telemetry deltas, and refine tactical rosters before toss lock.
+      </p>
+</div>
+<!-- Quick Stats Metric strip -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden xl:flex items-center gap-space-md px-space-md py-space-xs rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline">Active Credits Used</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">297.5 <span class="text-outline font-normal">/ 300</span></span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline">Avg Ranking</span>
+<span class="font-label-numeric text-label-numeric font-bold text-primary">Top 4.2%</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold px-space-lg py-space-sm rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-150 shadow-sm active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Create New Team</span>
+</button>
+</div>
+</div>
+<!-- Filter & Segmented Control Rail -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-lg">
+<div class="inline-flex p-space-2xs rounded-xl bg-surface-container-low" id="teamFilterTabs" role="tablist">
+<button aria-selected="true" class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center gap-space-xs" data-tab="all" role="tab" type="button">
+<span>All Teams</span>
+<span class="font-label-numeric text-label-numeric px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">3</span>
+</button>
+<button aria-selected="false" class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-tab="live" role="tab" type="button">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Live Matches</span>
+<span class="font-label-numeric text-label-numeric px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">1</span>
+</button>
+<button aria-selected="false" class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-tab="upcoming" role="tab" type="button">
+<span>Upcoming</span>
+<span class="font-label-numeric text-label-numeric px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">1</span>
+</button>
+<button aria-selected="false" class="px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" data-tab="finished" role="tab" type="button">
+<span>Finished</span>
+<span class="font-label-numeric text-label-numeric px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">1</span>
+</button>
+</div>
+<!-- Telemetry Search & Format Filter -->
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-3 py-space-xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg border-0 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Filter by team or series..." type="text"/>
+</div>
+<button aria-label="Sort options" class="p-space-xs rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">sort</span>
+</button>
+</div>
+</div>
+<!-- Primary Roster Cards Stream -->
+<div class="flex flex-col gap-space-lg w-full">
+<!-- CARD 1: LIVE MATCH TEAM -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden transition-all duration-200 hover:shadow-lg">
+<!-- High-intensity top status banner -->
+<div class="px-space-lg py-space-xs bg-primary-container/15 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-85"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-badge text-label-badge text-on-primary-container uppercase tracking-wider font-bold">
+            Live Now · Final Inning (Over 18.2)
+          </span>
+<span class="hidden sm:inline font-label-numeric text-label-numeric text-on-primary-container/70">• Target: 177</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-numeric text-label-numeric text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Projected: 745 pts</span>
+</div>
+</div>
+<div class="p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<!-- Match & Scoreboard Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container flex-shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High quality dynamic sports shot of cricket batsman striking ball under floodlights in cricket stadium with emerald turf and modern aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2h4BxAMbX3O1HBo2ry2HbvsJYXrjYss3EZKHCQ2NWqj6I5ChzR4UYevb0P3NcaUxZzlIWueotpSvrxIyOrRDio2sf0YD2ML0RJ7G7unMGq-HXRWqTAo24IrRMLXiYlmhluz7q6-CLONrioV54yfvm_Phm3U40sMxihOG3aTQ7PN8HaK_R_YWlnYLYEkWcps3MPCz1fVtUMWYQnj_-sISiLwfSmIFfbNS_0JWVHb-z1f2iTnY3IjKf"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Thunder Strikers XI</h2>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge font-bold">T20</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="font-medium text-on-surface">ICC Men's T20 World Cup</span>
+<span>•</span>
+<span>IND vs SA Final</span>
+<span class="text-outline text-[10px]">Kensington Oval</span>
+</p>
+</div>
+</div>
+<!-- Score Telemetry Display -->
+<div class="flex items-baseline gap-space-md bg-surface-container-low px-space-lg py-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline font-semibold">Total Points</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold font-label-numeric text-on-surface tracking-tight">682</span>
+<span class="font-label-numeric text-label-numeric font-semibold text-primary inline-flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>+45 last over
+                </span>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline font-semibold">Contest Rank</span>
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-md text-headline-md font-bold font-label-numeric text-on-surface">#14</span>
+<span class="font-label-numeric text-label-numeric text-outline font-normal">/ 1,420</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry Breakdown: Pitch & Live Over mini-telemetry -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Captain & Vice Captain Performance Row -->
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-bold">Leadership Multipliers</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Captain Card -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait photo of seasoned elite international batsman in cricket jersey looking determined sharp lighting clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSt-Kl70ARmjgalZoYLjefjVNDxiAGw7clcpAF8BqnB2UuJDOJqCNd4xpGBKqNbLALh1eINPT4NOJVLLeOs0CHeujKgSLu42U5n8elqJr7UCOELyR2PFcH-AMKbFrG0wNSQdiqy0W8PV3BBI5b2BUfuTkI_3BPe78HUtIekUEAJKXeRjGG9wR3mpyLtqV7jNrT4rfmOCDZoL4HI-f-8c7HDBagpBPIXGyuWkPW3P6FXTH0dvCD24Vd"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary-container text-on-primary-fixed font-label-badge text-label-badge flex items-center justify-center font-black shadow-sm">2x</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-body-sm text-body-sm font-bold text-on-surface truncate">V. Kohli</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-highest font-label-badge text-[10px] text-on-surface-variant font-bold">BAT</span>
+</div>
+<span class="font-label-meta text-label-meta text-outline">76 pts base score</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric font-bold text-primary">152 pts</span>
+<span class="block font-label-meta text-label-meta text-outline">Active</span>
+</div>
+</div>
+<!-- Vice-Captain Card -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait photo of world class cricket fast bowler ready to deliver ball intense expression athletic clean visual style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa75W1ifOioDZdSphqXJlR8MY0jbLegeO7dJM2Pyrte8CfvlCd-QZqo_gA4s3lvQH0K1M7wMEp42U-c0jFxU189Y7mO7cTa9BB6Rbe3QVzjFqwAryQtrk_PNj5uPGKEdwVcjeiMJAG5zP48ZiMWxvFJ3juabRh-vKItJYvF7PnE3_fR9dc6XHrdJSUBgYCAfHAXoSuwd3ogYRCBHi5LpcxfUUznWyHYbuXMxhFxMMMzT9wj6VSZ5RJ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge flex items-center justify-center font-black shadow-sm">1.5x</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-body-sm text-body-sm font-bold text-on-surface truncate">J. Bumrah</span>
+<span class="px-1 py-0.2 rounded bg-surface-container-highest font-label-badge text-[10px] text-on-surface-variant font-bold">BOWL</span>
+</div>
+<span class="font-label-meta text-label-meta text-outline">70 pts base score</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-numeric text-label-numeric font-bold text-secondary">105 pts</span>
+<span class="block font-label-meta text-label-meta text-outline">2/18 (3.4)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Sparkline Telemetry Mini Visualizer -->
+<div class="md:col-span-4 flex flex-col justify-between p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-bold">Points Momentum</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">Rank +32</span>
+</div>
+<!-- Minimalist Inning Point Flow Vector Chart -->
+<div class="py-space-2xs flex items-end gap-1.5 h-10">
+<div class="w-full bg-surface-container-high rounded-t-sm h-[30%]"></div>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[45%]"></div>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[40%]"></div>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[60%]"></div>
+<div class="w-full bg-surface-container-high rounded-t-sm h-[55%]"></div>
+<div class="w-full bg-primary-container/60 rounded-t-sm h-[75%]"></div>
+<div class="w-full bg-primary-container rounded-t-sm h-[95%]"></div>
+</div>
+<div class="flex justify-between font-label-meta text-label-meta text-outline">
+<span>Over 12</span>
+<span>Over 15</span>
+<span class="text-primary font-semibold">Over 18.2</span>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-outline font-label-meta text-label-meta">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>Squad locked at match toss (18:30 GMT)</span>
+</div>
+<div class="flex items-center gap-space-sm ml-auto">
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" title="Share Team Card" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-outline cursor-not-allowed font-body-sm text-body-sm font-semibold flex items-center gap-space-2xs" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Edit Squad</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-on-primary-container transition-all flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">sports_score</span>
+<span>View Live Score &amp; Breakdown</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: SERIES TEAM (TOURNAMENT LONG) -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+<div class="px-space-lg py-space-xs bg-surface-container flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-on-surface font-label-badge text-label-badge uppercase font-bold tracking-wider">
+            Active Series Squad
+          </span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant font-medium">Match 3 of 5 In Progress</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-numeric text-label-numeric text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>Next: 4th Test, Melbourne</span>
+</div>
+</div>
+<div class="p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[32px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Willow Warriors</h2>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge font-bold">TEST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="font-medium text-on-surface">Border-Gavaskar Trophy 2024/25</span>
+<span>•</span>
+<span>5-Test Series Campaign</span>
+</p>
+</div>
+</div>
+<!-- Points Display -->
+<div class="flex items-baseline gap-space-md bg-surface-container-low px-space-lg py-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline font-semibold">Series Total</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl font-bold font-label-numeric text-on-surface tracking-tight">1,420</span>
+<span class="font-label-numeric text-label-numeric text-outline">pts</span>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-outline font-semibold">Global Standing</span>
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-md text-headline-md font-bold font-label-numeric text-primary">#8</span>
+<span class="font-label-numeric text-label-numeric text-outline font-normal">of 280 Managers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Captain & Core Statistics Minimalist Pill Row -->
+<div class="flex flex-wrap items-center gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm pr-space-md">
+<span class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-badge text-label-badge font-bold">C</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">P. Cummins</span>
+<span class="font-label-meta text-label-meta text-outline">(BOWL · AUS)</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface ml-1">312 pts</span>
+</div>
+<div class="hidden sm:block w-px h-6 bg-surface-container-high"></div>
+<div class="flex items-center gap-space-sm pr-space-md">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-badge text-label-badge font-bold">VC</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">R. Sharma</span>
+<span class="font-label-meta text-label-meta text-outline">(BAT · IND)</span>
+<span class="font-label-numeric text-label-numeric font-medium text-on-surface ml-1">214 pts</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs ml-auto text-outline font-label-meta text-label-meta">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>2 substitutions remaining for 4th Test</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-between gap-space-sm">
+<button class="text-error font-body-sm text-body-sm hover:underline font-medium inline-flex items-center gap-space-2xs" onclick="confirmDeleteTeam('Willow Warriors')" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Disband Squad</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Edit Team</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-on-secondary-fixed-variant transition-colors flex items-center gap-space-2xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+<span>View Scorecard</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 3: UPCOMING MATCH TEAM (EDITABLE) -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden">
+<div class="px-space-lg py-space-xs bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase font-bold tracking-wider">
+            Upcoming · Starts in 18h
+          </span>
+<span class="font-label-numeric text-label-numeric text-outline font-medium">Toss at 13:00 Local</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-numeric text-label-numeric text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Draft Ready &amp; Verified</span>
+</div>
+</div>
+<div class="p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[32px]">sports_cricket</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold truncate">Pace Attack Squad</h2>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge font-bold">SUPER 8</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="font-medium text-on-surface">AUS vs ENG</span>
+<span>•</span>
+<span>Super 8 Match 42</span>
+<span class="text-outline text-[10px]">North Sound, Antigua</span>
+</p>
+</div>
+</div>
+<!-- Roster Balance Breakdown -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="flex flex-col items-center">
+<span class="font-label-meta text-label-meta uppercase text-outline">WK</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">1</span>
+</div>
+<span class="text-surface-container-high">•</span>
+<div class="flex flex-col items-center">
+<span class="font-label-meta text-label-meta uppercase text-outline">BAT</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">4</span>
+</div>
+<span class="text-surface-container-high">•</span>
+<div class="flex flex-col items-center">
+<span class="font-label-meta text-label-meta uppercase text-outline">AR</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">2</span>
+</div>
+<span class="text-surface-container-high">•</span>
+<div class="flex flex-col items-center">
+<span class="font-label-meta text-label-meta uppercase text-outline">BOWL</span>
+<span class="font-label-numeric text-label-numeric font-bold text-on-surface">4</span>
+</div>
+<div class="h-6 w-px bg-surface-container-high ml-space-xs"></div>
+<div class="flex flex-col ml-space-xs">
+<span class="font-label-meta text-label-meta uppercase text-outline">Credits Rem.</span>
+<span class="font-label-numeric text-label-numeric font-bold text-primary">2.5 Cr</span>
+</div>
+</div>
+</div>
+<!-- Strategy Callout / Weather Condition Snapshot -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">wb_sunny</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Pitch condition: <strong class="text-on-surface">Hard Grass Surface</strong> — Favouring early fast seamers. 
+              <span class="hidden sm:inline text-outline">Unlimited modifications available until coin toss.</span>
+</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline font-medium">18h remaining</span>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs rounded-lg text-outline hover:text-error hover:bg-error-container/20 transition-colors" onclick="confirmDeleteTeam('Pace Attack Squad')" title="Delete Draft" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+<button class="p-space-xs rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" title="Clone Squad" type="button">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-colors flex items-center gap-space-2xs" type="button">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Manage Substitutes</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold hover:bg-primary hover:text-on-primary transition-all flex items-center gap-space-2xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Edit Roster</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Preview & Recommended Series Drawer (Bottom Section) -->
+<div class="mt-space-2xl pt-space-xl border-t border-surface-container-high">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-outline font-bold">Unentered Tournaments</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Available Fantasy Leagues</h3>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline">Showing inactive leagues</span>
+</div>
+<!-- Empty State League Card -->
+<div class="w-full rounded-2xl bg-surface-container-low p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-lg">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[36px]">sports_tennis</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold">Women's Premier League 2025</h4>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-label-badge text-label-badge font-bold">UPCOMING LEAGUE</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            No squads registered yet. Build your 11-player lineup to contend for ₹2.5 Lakhs in prize distribution pools.
+          </p>
+<div class="flex items-center gap-space-md mt-space-xs font-label-meta text-label-meta text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">event</span> Starts in 3 days</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">group</span> 4,290 managers joined</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end flex-shrink-0">
+<button class="px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+          League Rules
+        </button>
+<button class="px-space-xl py-space-sm rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold hover:bg-primary hover:text-on-primary transition-all shadow-sm flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create Team</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Minimal Toast Notification for Actions (Micro-interaction) -->
+<div class="fixed bottom-20 right-6 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-200 flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">info</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastText">Notification triggered</span>
+</div>
+<!-- Interactive JavaScript logic for dynamic filtering and simple feedback -->
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const text = document.getElementById('toastText');
+      if (!toast || !text) return;
+      text.textContent = message;
+      toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+
+    function confirmDeleteTeam(teamName) {
+      if (confirm(`Are you sure you want to disband '${teamName}'? This action cannot be reversed.`)) {
+        showToast(`'${teamName}' has been deleted.`);
+      }
+    }
+
+    // Filter Tabs Handler
+    const tabs = document.querySelectorAll('#teamFilterTabs button');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.remove('text-on-surface-variant');
+        tab.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        
+        const filter = tab.getAttribute('data-tab');
+        showToast(`Filtered: ${filter.toUpperCase()} squads`);
+      });
+    });
+  </script>
+</div></main></div><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_-1px_8px_rgba(0,0,0,0.04)] px-space-sm flex items-center justify-around" data-active-classes="text-primary-container font-semibold"><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="series" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-meta text-label-meta">Series</span></a><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="match-center" href="#"><span class="material-symbols-outlined text-[22px]">sports_cricket</span><span class="font-label-meta text-label-meta">Matches</span></a><a aria-current="page" class="flex flex-col items-center justify-center py-space-2xs px-space-sm rounded-lg relative text-primary-container font-semibold" data-path="my-teams" href="#"><span class="material-symbols-outlined text-[22px]">emoji_events</span><span class="font-label-meta text-label-meta">My Teams</span><span class="absolute top-1 right-2 w-1.5 h-1.5 rounded-full bg-primary-container"></span></a><a class="flex flex-col items-center justify-center text-on-surface-variant py-space-2xs px-space-sm rounded-lg hover:text-on-surface" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-[22px]">leaderboard</span><span class="font-label-meta text-label-meta">Rankings</span></a></nav></body></html>

@@ -1,0 +1,229 @@
+{
+ "match-14YO": {
+  "ft": 2,
+  "mn": "11",
+  "s": 1,
+  "t": "2026-10-24T18:00:00.000Z",
+  "v": "Karwan Cricket Ground, Ajman",
+  "team1": {
+   "name": "Dubai",
+   "fkey": "DE"
+  },
+  "team2": {
+   "name": "Abu Dhabi",
+   "fkey": "DC"
+  },
+  "sf": "2O6",
+  "dt": 0,
+  "winner_team_fkey": null,
+  "fkey": "14YO"
+ },
+ "https://api.goscorer.com/api/v3/getSV3": {
+  "B": "First Bounce",
+  "a": "DE.DC",
+  "j": "181/5(19.2"
+ },
+ "https://api.goscorer.com/api/v3/getSC4": [
+  {
+   "a": [
+    "D2K.27.20.0.3",
+    "QC6.32.12.0.0",
+    "CCA.28.24.0.2",
+    "15W.40.24.0.0",
+    "M1Y.35.24.0.0",
+    "7TE.19.12.0.0"
+   ],
+   "b": [
+    "GDG.4.12.0.0.17.13.5.D2K/-/",
+    "QCW.71.44.5.4.98.150.2.CCA.7TG/-/",
+    "QJ6.67.46.6.2.105.162.1.D2K/-/",
+    "CQP.7.6.0.0.111.172.2.CCA.15W/-/",
+    "QCI.4.2.1.0.107.166.1.D2K/-/",
+    "QK3.4.3.0.0/-",
+    "NUD.7.3.0.1/-",
+    "GW3/-",
+    "AP9/-",
+    "GDP/-",
+    "QK8/-"
+   ],
+   "c": "DC",
+   "cd": 2,
+   "d": "181/5(116",
+   "e": "0.0.17.0.0",
+   "im": "",
+   "p": [
+    "GDG.4.12.QCW.6.5.13.17",
+    "QCW.65.39.QJ6.58.42.137.81",
+    "QJ6.9.4.CQP.3.3.12.7",
+    "CQP.0.0.QCI.4.2.4.2",
+    "CQP.4.3.QK3.2.1.6.4",
+    "QK3.2.2.NUD.7.3.9.5"
+   ],
+   "st": "27",
+   "x": "QJ6/-1"
+  },
+  {
+   "b": [
+    "QC6/-",
+    "15W/-",
+    "7Q4/-",
+    "MX9/-",
+    "M1Y/-",
+    "7TE/-",
+    "7TG/-",
+    "D2K/-",
+    "CCA/-",
+    "QCD/-",
+    "8LM/-"
+   ],
+   "c": "DE",
+   "st": "27",
+   "x": "7TG/"
+  }
+ ],
+ "https://oc.crickapi.com/mapping/getHomeMapDataliveparsing": {
+  "p": [
+   {
+    "f_key": "QK3",
+    "n": "Jahanzeb Bhatti"
+   },
+   {
+    "f_key": "NUD",
+    "n": "Ahmad Ali Khilji"
+   },
+   {
+    "f_key": "D2K",
+    "n": "Said Nazeer Afridi"
+   },
+   {
+    "f_key": "CQP",
+    "n": "Rayan Khan"
+   },
+   {
+    "f_key": "2",
+    "n": "Ganapathi Vignesh"
+   },
+   {
+    "f_key": "CCA",
+    "n": "Sawai Choudhary"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "DE",
+    "n": "Dubai",
+    "sn": "DUB",
+    "cc": "0-#936FB4",
+    "uc": "#BD4591",
+    "dc": "#1961A9"
+   },
+   {
+    "f_key": "DC",
+    "n": "Abu Dhabi",
+    "sn": "ABD",
+    "cc": "0-#C44F51",
+    "uc": "#BF3738",
+    "dc": "#171516"
+   }
+  ],
+  "v": [],
+  "s": [
+   {
+    "f_key": "2O6",
+    "n": "Emirates D20 League 2026",
+    "sn": "Emirates D20 2026",
+    "tour": 0
+   }
+  ],
+  "u": []
+ },
+ "https://oc.crickapi.com/mapping/getHomeMapData": {
+  "p": [
+   {
+    "f_key": "GDG",
+    "n": "Syed Haider"
+   },
+   {
+    "f_key": "D2K",
+    "n": "Said Nazeer Afridi"
+   },
+   {
+    "f_key": "QCW",
+    "n": "Muhammad Fawad"
+   },
+   {
+    "f_key": "CCA",
+    "n": "Sawai Choudhary"
+   },
+   {
+    "f_key": "7TG",
+    "n": "Ronak Panoly"
+   },
+   {
+    "f_key": "QJ6",
+    "n": "MD Aftab"
+   },
+   {
+    "f_key": "CQP",
+    "n": "Rayan Khan"
+   },
+   {
+    "f_key": "15W",
+    "n": "Aryan Lakra"
+   },
+   {
+    "f_key": "QCI",
+    "n": "Inusha Umayangana"
+   },
+   {
+    "f_key": "QK3",
+    "n": "Jahanzeb Bhatti"
+   },
+   {
+    "f_key": "NUD",
+    "n": "Ahmad Ali Khilji"
+   },
+   {
+    "f_key": "GW3",
+    "n": "Farman Ullah"
+   },
+   {
+    "f_key": "AP9",
+    "n": "Omid Rehman"
+   },
+   {
+    "f_key": "GDP",
+    "n": "Sayam Khan"
+   },
+   {
+    "f_key": "QK8",
+    "n": "Nadeera Ishan"
+   },
+   {
+    "f_key": "QC6",
+    "n": "Aiden Manian"
+   },
+   {
+    "f_key": "M1Y",
+    "n": "Baitullah Khan Zadran"
+   },
+   {
+    "f_key": "7TE",
+    "n": "Dhruv Parashar"
+   }
+  ],
+  "t": [
+   {
+    "f_key": "DC",
+    "n": "Abu Dhabi",
+    "sn": "ABD",
+    "cc": "0-#C44F51",
+    "uc": "#BF3738",
+    "dc": "#171516"
+   }
+  ],
+  "v": [],
+  "s": [],
+  "u": []
+ }
+}

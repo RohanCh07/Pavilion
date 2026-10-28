@@ -1,0 +1,51 @@
+# Runs the web app/API and the Telegram bot on one machine, sharing one database.
+#   cp .env.example .env    # fill in TELEGRAM_BOT_TOKEN, DATA_PROVIDER=crex, ...
+#   docker compose up -d --build
+# The app is then on http://<server>:8000. See docs/DEPLOY.md.
+
+services:
+  api:
+    build: .
+    image: fantasy-points
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://fantasy:fantasy@db:5432/fantasy
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  bot:
+    image: fantasy-points
+    command: ["fantasy-bot"]
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://fantasy:fantasy@db:5432/fantasy
+    depends_on:
+      api:
+        condition: service_started
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      disable: true
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: fantasy
+      POSTGRES_PASSWORD: fantasy
+      POSTGRES_DB: fantasy
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fantasy"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  pgdata:
